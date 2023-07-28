@@ -32,7 +32,7 @@
 
 /* for all project */
 .container {
-    max-width: 1350px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -45,7 +45,9 @@ h3,
 h4 {
     font-family: 'ArnoPro', 'Legan', 'serif';
 }
-
+a{
+    color: var(--brown);
+}
 .d-flex {
     display: flex;
 }
@@ -211,6 +213,11 @@ header.sticky-header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 14.06%, rgba(0, 0, 0, 0.45) 63.76%), url(../images/sheki.png), rgb(192, 190, 190) 0px -466.07px / 100% 158.249% no-repeat;
 }
 
+.hero-top,
+.hero-bottom {
+    gap: 20px;
+}
+
 .hero-top-heading {
     font-size: 90px;
     color: var(--white);
@@ -241,3 +248,228 @@ header.sticky-header {
 }
 
 /* hero end */
+
+/* about and products start */
+.aboutAndProduct-container{
+    background-color: var(--cream);
+}
+.about-section{
+    gap: 70px;
+    padding: 40px 0;
+}
+.about-left,.about-right{
+    width: 50%;
+}
+.about-heading{
+    color: var(--brown);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about-subheading{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.about-left p{
+    text-align: center;
+}
+.about-right img{
+    width: 100%;
+}
+
+.btn-empty{
+    margin-top: 50px;
+    width: 40%;
+    border: 1px solid var(--brown);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+.btn-empty:hover{
+    background-color: var(--brown);
+    color: var(--white);
+}
+/* about and products end */
+
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1189px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* header and nav */
+    nav {
+        gap: 40px;
+    }
+    .social-container {
+        gap: 15px;
+    }
+    .search-box:hover>.search-input {
+        width: 120px;
+        padding: 1px 6px;
+    }
+
+}
+
+@media only screen and (max-width: 1111px) {
+    .container {
+        max-width: 900px;
+    }
+    /* header and nav */
+    nav {
+        gap: 20px;
+    }
+    .social-container {
+        gap: 5px;
+    }
+        /* hero */
+        .hero{
+            height: 1400px;
+            background-position: center;
+        }
+}
+
+@media only screen and (max-width: 1027px) {
+    .container {
+        max-width: 900px;
+    }
+    /* hero */
+    .hero{
+        height: 1200px;
+    }
+    .hero-top-heading {
+        font-size: 80px;
+    }
+    .hero-bottom-heading {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .container {
+        max-width: 790px;
+    }
+    /* header and nav */
+    .social-container {
+        gap: 0;
+    }
+    nav{
+        gap: 15px;
+    }
+    .navLink{
+        font-size: 14px;
+    }
+    /* hero */
+    .hero{
+        background-position: 10%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .container {
+        max-width: 760px;
+    }
+    /* hero */
+    .hero-top-heading{
+        font-size: 70px;
+    }
+    .hero-bottom-heading{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 660px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 650px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .container {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .container {
+        max-width: 250px;
+    }
+}
+
+/* @media only screen and (min-width: 1400px) {
+    .container {
+        min-width: 1300px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+@media only screen and (min-width: 1189px) {
+    .container {
+        max-width: 1089px;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 892px;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 668px;
+    }
+
+}
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 476px;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    .container {
+        max-width: 350px;
+    }
+
+}
+@media only screen and (max-width: 350px) {
+    .container {
+        max-width: 250px;
+    }
+
+} */
