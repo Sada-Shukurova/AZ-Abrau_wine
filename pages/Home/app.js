@@ -1,7 +1,7 @@
 const nav = document.querySelector('header');
 // nav
 const navTop = nav.offsetTop;
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     (window.scrollY >= navTop) ? nav.classList.add('sticky-header') : nav.classList.remove('sticky-header');
 })
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
         margin: 20,
         center: true,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 2500,
         responsive: {
             0: {
                 items: 1
@@ -38,13 +38,43 @@ $(document).ready(function () {
 
     });
 });
+// mobile navigation
+const headerBurgerIcon = document.querySelector('.header-burger-icon')
+const mobileHeader = document.querySelector('.mobile-header')
+const mobileCloseIcon = document.querySelector('.mobile-close-icon')
+const mobileNav = document.getElementById('mobile-nav')
+const mobileSocial = document.getElementById('mobile-social')
 
-const headerBurgerIcon=document.querySelector('.header-burger-icon')
-const mobileHeader=document.querySelector('.mobile-header')
-
-headerBurgerIcon.addEventListener('click', function(){
-    mobileHeader.style.display='flex';
-    headerBurgerIcon.style.display='inline-block';
-    document.body.style.overflow='hidden';
+headerBurgerIcon.addEventListener('click', function () {
+    mobileHeader.style.transform = 'translate(0)';
+    mobileCloseIcon.style.display = 'inline-block';
+    document.body.style.overflow = 'hidden';
+    mobileNav.style.opacity = '1';
+    mobileSocial.style.opacity = '1';
 })
 
+mobileCloseIcon.addEventListener('click', function () {
+    mobileCloseIcon.style.transform = 'translate(0)';
+    mobileHeader.style.transform = 'translate(100%)';
+    document.body.style.overflow = 'visible';
+    mobileNav.style.opacity = '0';
+    mobileSocial.style.opacity = '0';
+})
+
+// filter brightness on image on mouseenter
+
+// left
+$(".brands-txt-left .brands-btn").mouseenter(function () {
+    $("#grapes-img").css({ "filter": "brightness(0.4)" })
+})
+$(".brands-txt-left .brands-btn").mouseleave(function () {
+    $("#grapes-img").css({ "filter": "brightness(1)" })
+})
+// right
+$('.brands-txt-right .brands-btn').mouseenter(function () {
+    $('#grape-garden').css({ 'filter': 'brightness(0.4)' })
+})
+$('.brands-txt-right .brands-btn').mouseleave(function () {
+    $('#grape-garden').css({ 'filter': 'brightness(1)' })
+})
+// ----------

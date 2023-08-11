@@ -90,9 +90,25 @@ header {
     top: 0;
 
 }
-.header-burger-icon{
+
+.header-burger-icon {
     display: none;
+    cursor: pointer;
 }
+
+.header-burger-icon:hover path {
+    fill: var(--orange);
+}
+
+.mobile-close-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-close-icon:hover path {
+    fill: var(--orange);
+}
+
 .logo-container {
     position: relative;
 }
@@ -208,6 +224,12 @@ header.sticky-header {
     top: 0;
     width: 100%;
     z-index: 20;
+}
+
+.mobile-header {
+    display: none;
+    transform: translate(100%);
+    transition: 0.5s all ease-in-out;
 }
 
 /* header end */
@@ -421,6 +443,137 @@ header.sticky-header {
 
 /* about and products end */
 
+/* wine video start */
+.wine-video {
+    background-color: var(--black);
+    position: relative;
+    padding: 40px 0;
+}
+
+.wine-video-txt-container {
+    position: absolute;
+    inset: 0;
+}
+
+.wine-video-txt {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wine-video-txt * {
+    color: var(--white);
+}
+
+.wine-video-txt>h2 {
+    font-size: 50px;
+    margin-top: 50%;
+}
+
+.wine-video-txt>p {
+    font-size: 18px;
+}
+
+.wine-video-txt>.btn-empty {
+    border-color: var(--white);
+    display: block;
+}
+
+
+.wine-video-txt>.btn-empty:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* wine video end */
+
+/* brands start */
+.brands {
+    padding: 50px 0;
+    background-color: var(--cream);
+}
+
+.brands-heading {
+    color: var(--brown);
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.brands-img-container img {
+    width: 100%;
+}
+
+#grapes-img {
+    clip-path: polygon(0 0, 0 97%, 97% 0);
+}
+
+#grape-garden {
+    clip-path: polygon(100% 100%, 3% 100%, 100% 3%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.brands-img-container {
+    position: relative;
+}
+
+.brands-img-container img {
+    height: 100%;
+}
+
+#grapes-img,
+#grape-garden {
+    height: 100%;
+}
+
+.brands-txt-left,
+.brands-txt-right {
+    position: absolute;
+    color: var(--white);
+}
+
+.brands-txt-left {
+    top: 3%;
+    left: 3%;
+}
+
+.brands-txt-right {
+    bottom: 5%;
+    right: 5%;
+}
+
+.brands-txt-heading {
+    font-size: 50px;
+    font-weight: 400;
+    width: 6ch;
+}
+
+.brands-btn {
+    color: var(--white);
+    border-color: var(--white);
+    width: 100%;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.brands-img-container .brands-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#grapes-img,#grape-garden {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/* brands end */
+
+/* news start */
+
+/* news end */
+
+/* ------RESPONSIVE------ */
 
 @media only screen and (min-width: 1440px) {
     .container {
@@ -513,6 +666,11 @@ header.sticky-header {
         height: 1400px;
         background-position: center;
     }
+
+    /* wine vide */
+    .wine-video-txt h2 {
+        margin-top: 20%;
+    }
 }
 
 @media only screen and (max-width: 1027px) {
@@ -543,6 +701,15 @@ header.sticky-header {
         left: 0px;
         top: 30%;
     }
+
+    /* wine video */
+    .wine-video-txt {
+        width: 55%;
+    }
+
+    .wine-video-txt h2 {
+        margin-top: 30%;
+    }
 }
 
 @media only screen and (max-width: 925px) {
@@ -567,11 +734,14 @@ header.sticky-header {
     .hero {
         background-position: 10%;
     }
+    .brands-txt-heading{
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
     .container {
-        max-width: 760px;
+        max-width: 730px;
     }
 
     /* hero */
@@ -582,9 +752,11 @@ header.sticky-header {
     .hero-bottom-heading {
         font-size: 60px;
     }
-    .hero-bottom-txt{
+
+    .hero-bottom-txt {
         width: 55%;
     }
+
     /* carousel */
     .owl-carousel.carousel-wine .owl-nav button.owl-next {
         right: 10px;
@@ -601,99 +773,141 @@ header.sticky-header {
     .container {
         max-width: 660px;
     }
-/* TABLET MENU START */
-.mobile-header{
-    display: none;
-    background-color: var(--black);
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px 40px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 20;
-    width: 60%;
-    height: 100vh;
 
-}
-.mobile-header nav{
-gap: 30px;
-}
-.mobile-header nav .navLink{
-    font-size: 24px;
-}
-.mobile-header nav .navLink:hover::after{
-width: 40%;
-}
-.mobile-header .social-container{
-    display: flex;
-    margin-bottom: 40px;
-}
-.mobile-header .social-container a{
-    width: 35px;
-    height: 35px;
-}
-.mobile-header .social-container a .facebook{
-    width: 10px;
-    height: 20px;
-}
-.mobile-header .social-container a .instagram{
-width: 22px;
-height: 22px;
-}
-.mobile-header .social-container a .lang{
-    width: 22px;
-    height: 22px;
-}
-.mobile-header .social-container{
-    gap: 10px;
-}
+    /* TABLET MENU START */
 
-    .header-burger-icon{
-        display:inline-block;
+    .mobile-close-icon {
+        position: absolute;
+        top: 23px;
+        right: 5.5%;
+        font-size: 40px;
+    }
+
+    .mobile-close-icon path {
+        fill: var(--white);
+    }
+
+    .mobile-header {
+        background-color: var(--black);
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 40px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .mobile-header .logo-container {
+        width: fit-content;
+    }
+
+    .mobile-header nav {
+        gap: 30px;
+        opacity: 0;
+        transition: 1.5s all ease-in-out;
+    }
+
+    .mobile-header nav .navLink {
+        font-size: 24px;
+    }
+
+    .mobile-header nav .navLink:hover::after {
+        width: 40%;
+    }
+
+    .mobile-header .social-container {
+        display: flex;
+        margin-bottom: 40px;
+        opacity: 0;
+        transition: 1.5s all ease-in-out;
+    }
+
+    .mobile-header .social-container a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .mobile-header .social-container a .facebook {
+        width: 10px;
+        height: 20px;
+    }
+
+    .mobile-header .social-container a .instagram {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mobile-header .social-container a .lang {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mobile-header .social-container {
+        gap: 10px;
+    }
+
+    .header-burger-icon {
+        display: inline-block;
         position: absolute;
         top: 23px;
         right: 3%;
         font-size: 35px;
     }
-    .header-burger-icon path{
+
+    .header-burger-icon path {
         fill: white;
     }
-    .container .search-box .search-btn{
+
+    .container .search-box .search-btn {
         width: 38px;
         height: 38px;
     }
-    .container .search-box:hover{
+
+    .container .search-box:hover {
         height: 35px;
     }
-    .container .search-box .search-input{
+
+    .container .search-box .search-input {
         font-size: 16px;
     }
-    .search-box:hover>.search-input{
+
+    .search-box:hover>.search-input {
         padding: 1px 10px;
     }
-    .container .search-box .search-btn svg{
+
+    .container .search-box .search-btn svg {
         height: 1.2em;
     }
-    header .container nav,.social-container{
+
+    header .container nav,
+    .social-container {
         display: none;
     }
-    header .container{
+
+    header .container {
         justify-content: space-between;
     }
-    header .container .search-box{
-        margin-right: 50px;
+
+    header .container .search-box {
+        margin-right: 70px;
     }
+
     /* tablet menu */
 
 
-/* about */
-.about-section{
-    gap: 30px;
-}
-.about-left{
-    width: 40%;
-}
+    /* about */
+    .about-section {
+        gap: 30px;
+    }
+
+    .about-left {
+        width: 40%;
+    }
+
     /* carousel */
     .owl-carousel.carousel-wine .owl-nav button.owl-next {
         right: 25px;
@@ -708,6 +922,20 @@ height: 22px;
     .owl-item.active.center {
         margin-right: 0;
     }
+
+    /* wine video */
+    .wine-video-txt h2 {
+        font-size: 30px;
+    }
+
+    .wine-video-txt p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .wine-video-txt a {
+        margin-top: 20px;
+    }
 }
 
 /* Mobile */
@@ -715,17 +943,22 @@ height: 22px;
     .container {
         max-width: 500px;
     }
+
     /* hero */
-    .hero-bottom-txt{
+    .hero-bottom-txt {
         width: 65%;
     }
-/* about */
-.about-section{
-    flex-direction: column;
-}
-.about-left,.about-right{
-    width: 100%;
-}
+
+    /* about */
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+
     /* carousel */
     .carousel-wine-item {
         width: 98%;
@@ -740,11 +973,35 @@ height: 22px;
         left: 0;
         top: 30%;
     }
+
+    /* wine video */
+    .wine-video-txt h2 {
+        font-size: 30px;
+    }
+
+    .wine-video-txt>.btn-empty {
+        margin-top: 20px;
+    }
 }
 
+/* MOBILE */
 @media only screen and (max-width: 565px) {
     .container {
         max-width: 400px;
+    }
+
+    /* mobile header */
+    .mobile-header {
+        width: 100%;
+    }
+
+    /* wine video */
+    .wine-video-txt {
+        width: 100%;
+    }
+
+    .wine-video-txt h2 {
+        margin-top: 10%;
     }
 }
 
@@ -752,18 +1009,39 @@ height: 22px;
     .container {
         max-width: 320px;
     }
+
+    /* wine video */
+    .wine-video-txt h2 {
+        margin-top: 20%;
+    }
+
+    .wine-video-txt a {
+        margin-top: 10px;
+    }
+
+    .wine-video-txt p {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 370px) {
     .container {
         max-width: 250px;
     }
+
+    /* mobile nav */
+    #mobile-nav .navLink {
+        font-size: 18px;
+    }
+
     /* hero */
     .hero-top-txt,
-    .hero-bottom-txt{
+    .hero-bottom-txt {
         width: 90%;
     }
-    .hero-top-heading,.hero-bottom-heading{
+
+    .hero-top-heading,
+    .hero-bottom-heading {
         font-size: 55px;
         text-align: center;
     }
