@@ -81,25 +81,24 @@ $('.brands-txt-right .brands-btn').mouseleave(function () {
 
 // swiper
 let newsSwiper = new Swiper(".news-swiper", {
-    loop:true,
-    slidesPerView: 3,
+    loop: true,
     breakpoints: {
-        1024:{
-            slidesPerView:3,
+        1024: {
+            slidesPerView: 3,
         },
-      640: {
-        slidesPerView: 2,
-      },
-      450: {
-        slidesPerView: 1,
-      }
+        640: {
+            slidesPerView: 2,
+        },
+        480: {
+            slidesPerView: 1,
+        }
     },
-    // autoplay: {
-    //     delay: 2000,
-    //   },
-      spaceBetween: 30,
+    autoplay: {
+        delay: 2000,
+    },
+    spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
