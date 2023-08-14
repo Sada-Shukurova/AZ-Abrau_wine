@@ -102,3 +102,4 @@ let newsSwiper = new Swiper(".news-swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+

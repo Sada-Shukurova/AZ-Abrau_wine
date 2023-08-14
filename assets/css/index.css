@@ -272,7 +272,7 @@ header.sticky-header {
     line-height: 1.3;
 }
 
-.hero svg {
+.hero a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -737,8 +737,47 @@ header.sticky-header {
     top: 100%;
 }
 
-
 /* news end */
+
+/* footer start */
+.footer-top-container {
+    padding: 50px 0;
+    background-color: var(--creamDark);
+}
+
+.footer-bottom-container {
+    padding: 30px 0;
+    background-color: var(--cream);
+}
+
+footer * {
+    color: black;
+}
+
+footer a svg path {
+    fill: black;
+}
+
+.footer-bold-txt {
+    font-weight: bold;
+}
+
+p.footer-bold-txt {
+    width: 60px;
+    text-align: end;
+    margin-right: 20px;
+}
+
+.footer-column-gaps {
+    gap: 20px;
+}
+
+.address-length {
+    width: 60%;
+}
+
+/* footer end */
+
 
 /* ------RESPONSIVE------ */
 
@@ -965,6 +1004,10 @@ header.sticky-header {
         top: 30%;
     }
 
+    /* footer */
+    .address-length {
+        width: 40%;
+    }
 
 }
 
@@ -1146,6 +1189,15 @@ header.sticky-header {
         top: -46%;
         left: 14px;
     }
+
+    /* footer */
+    .footer-top {
+        gap: 40px;
+    }
+
+    .address-column {
+        width: 45%;
+    }
 }
 
 /* Mobile */
@@ -1197,6 +1249,16 @@ header.sticky-header {
     .wine-video-txt>.btn-empty {
         margin-top: 20px;
     }
+
+    /* footer */
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-social {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
 
 /* MOBILE */
@@ -1232,6 +1294,24 @@ header.sticky-header {
     .news-section .swiper-button-next {
         right: 10%;
     }
+
+    /* footer */
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-top * {
+        width: 100%;
+    }
+
+    .footer-bold-txt {
+        font-size: large;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -1250,6 +1330,17 @@ header.sticky-header {
 
     .wine-video-txt p {
         display: none;
+    }
+
+    /* footer */
+    p.footer-bold-txt {
+        margin-right: 0;
+        width: 100%;
+        text-align: start;
+    }
+
+    .address-column div {
+        gap: 10px;
     }
 }
 
