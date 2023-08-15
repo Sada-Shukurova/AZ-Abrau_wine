@@ -239,11 +239,92 @@ header.sticky-header {
 /* header end */
 
 /* hero start */
-.hero h1{
+.hero h1 {
     color: white;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), url(../images/products/hero-bg.png), lightgray 50% / cover no-repeat;
     padding: 170px 0;
     font-size: 65px;
     text-align: center;
 }
+
 /* hero end */
+
+/* main start */
+main {
+    background-color: var(--cream);
+    padding: 70px 0;
+}
+
+.currentNav {
+    color: gray;
+}
+
+.main-left {
+    width: 30%;
+}
+
+.main-right {
+    width: 70%;
+}
+
+.products-container {
+    border: 1px solid var(--creamDark);
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products-container .products-card {
+    width: calc(100% / 3 - 20px);
+    padding: 40px 30px;
+    gap: 30px;
+    border-right: 1px solid var(--creamDark);
+    position: relative;
+}
+
+.products-container .products-card:hover img {
+    scale: 1.1;
+}
+
+.products-container .products-card:hover .products-card-btn {
+    background-color: var(--brown);
+    color: white;
+    font-weight: lighter;
+}
+
+.products-card * {
+    text-align: center;
+}
+
+.products-card-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.products-container :nth-child(3),
+.products-container :nth-child(6),
+.products-container :nth-child(9),
+.products-container :last-child {
+    border-right: none;
+}
+
+.products-container .products-card .products-card-title {
+    font-size: 21px;
+}
+
+.products-container .products-card .products-card-description,
+.spirt {
+    color: #616161;
+}
+
+.products-card-btn {
+    padding: 5px 15px;
+    border: 1px solid var(--brown) !important;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 60%;
+}
+
+/* main end */
