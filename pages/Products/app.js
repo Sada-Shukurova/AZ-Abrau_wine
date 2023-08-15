@@ -18,3 +18,9 @@ fetch("http://localhost:3000/wines").then((res) => res.json())
         })
     }).catch((error) => console.log(error))
 
+
+    // filter
+const filterHeading=document.querySelector('..filter-item-inner-heading ')
+
+
+
