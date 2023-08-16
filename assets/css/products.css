@@ -409,19 +409,20 @@ li {
 
 .filter-item-inner-heading.minus:after,
 .filter-item-inner-heading.plus:after {
+    left: -15px;
     position: absolute;
-    top: 9%;
-    right: 7.5%;
+    top: 12%;
 }
 
 .filter-item-inner-heading.minus:after {
     content: "-";
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .filter-item-inner-heading.plus:after {
     content: "+";
     font-size: 24px;
+    top: 12%;
 }
 
 .filter-attribute-list {
@@ -542,11 +543,17 @@ p.footer-bold-txt {
     .search-box:hover>.search-input {
         width: 95px;
     }
+
+    /* filter */
+    .main-left-filter-head {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 
 @media only screen and (max-width: 1027px) {
     .container {
-        max-width: 900px;
+        max-width: 890px;
     }
 }
 
@@ -709,9 +716,37 @@ p.footer-bold-txt {
 
     /* tablet menu */
 
-    .hero h1{
+    .hero h1 {
         font-size: 45px;
     }
+
+    /* main filter section */
+    .main-container .main-left {
+        width: 30%;
+    }
+
+    .main-container .main-right {
+        width: 70%;
+    }
+
+    .products-container .products-card {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .products-container .products-card .products-card-title {
+        width: 8ch;
+    }
+
+    .products-container .products-card {
+        border-right: none;
+    }
+
+    .products-container .products-card .products-card-description,
+    .spirt {
+        font-size: 14px;
+    }
+
+
     /* footer */
     .footer-top {
         gap: 40px;
@@ -726,6 +761,41 @@ p.footer-bold-txt {
 @media only screen and (max-width: 650px) {
     .container {
         max-width: 500px;
+    }
+
+    /* main filter products */
+    .main-container .main-left {
+        width: 40%;
+    }
+
+    .main-container .main-right {
+        width: 60%;
+    }
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    .products-container .products-card {
+        width: 100%;
+        border-bottom: 1px solid var(--creamDark);
+    }
+
+    .products-container :last-child {
+        border-bottom: none;
+    }
+
+    .products-container .products-card .products-card-title {
+        font-size: 25px;
+    }
+
+    .products-container .products-card .products-card-description,
+    .spirt {
+        font-size: 16px;
+    }
+
+    .products-card-btn {
+        width: 100%;
     }
 
     /* footer */
@@ -766,13 +836,16 @@ p.footer-bold-txt {
     .footer-bottom {
         flex-wrap: wrap;
     }
-    .footer-bottom :nth-child(2){
+
+    .footer-bottom :nth-child(2) {
         order: 1;
     }
-    .footer-bottom :first-child{
+
+    .footer-bottom :first-child {
         order: 2;
     }
-    .footer-bottom :last-child{
+
+    .footer-bottom :last-child {
         order: 3;
     }
 }
@@ -781,9 +854,34 @@ p.footer-bold-txt {
     .container {
         max-width: 320px;
     }
-.hero h1{
-    font-size: 35px;
-}
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    /* main */
+    .main-container {
+        gap: 10px;
+    }
+
+    .main-left-filter-head>a {
+        font-size: 18px;
+    }
+
+    .main-container .main-right {
+        width: 70%;
+    }
+
+    .main-container .main-left {
+        width: 30%;
+    }
+
+    .filter-attribute-item,
+    .filter-item-inner-heading {
+        padding-left: 0;
+    }
+
+
     /* footer */
     p.footer-bold-txt {
         margin-right: 0;
@@ -805,4 +903,42 @@ p.footer-bold-txt {
     #mobile-nav .navLink {
         font-size: 18px;
     }
+
+    /* main */
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container .main-left,
+    .main-container .main-right {
+        width: 100%;
+    }
+
+    .main-left-filter-head {
+        flex-direction: unset
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+.container{
+    max-width: 200px;
+}
+    /* footer */
+    .address-column div {
+        gap: 0;
+    }
+
+    .footer-top {
+        text-align: center;
+    }
+
+    p.footer-bold-txt {
+        width: 50% !important;
+    }
+.footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+}
 }
