@@ -30,27 +30,34 @@ mobileCloseIcon.addEventListener('click', function () {
 })
 // ------------------
 
+document.addEventListener("DOMContentLoaded", getAllWines)
+
 // fetching data
 const productsContainer = document.querySelector('.products-container')
 
+function getAllWines() {
+    fetch("https://azabrau-backend.vercel.app/wines").then((res) => res.json())
+        .then(data => {
+            productsContainer.innerHTML = "";
 
-fetch("https://azabrau-backend.vercel.app/wines").then((res) => res.json())
-    .then(data => {
-        data.forEach((card) => {
-            const { title, description, image, spirt } = card;
-            productsContainer.innerHTML += `
-        <div class="products-card d-flex flex-column align-center">
-        <a class="products-card-link" href=""></a>
-            <img src="${image}" alt="">
-            <h3 class="products-card-title">${title}</h3>
-            <p class="products-card-description">Çeşid: ${description}</p>
-            <p class="spirt">Spirt: ${spirt}</p>
+            data.forEach((card) => {
+                const { title, description, image, spirt } = card;
+                productsContainer.innerHTML += `
+            <div class="products-card d-flex flex-column align-center">
+            <a class="products-card-link" href=""></a>
+                <img src="${image}" alt="">
+                <h3 class="products-card-title">${title}</h3>
+                <p class="products-card-description">Çeşid: ${description}</p>
+                <p class="spirt">Spirt: ${spirt}</p>
+    
+                <a class="products-card-btn" href="">Ətraflı</a>
+            </div>
+            `
+            })
+        }).catch((error) => console.log(error))
 
-            <a class="products-card-btn" href="">Ətraflı</a>
-        </div>
-        `
-        })
-    }).catch((error) => console.log(error))
+}
+
 
 
 // filter
@@ -68,14 +75,54 @@ filterHeading.forEach((heading, index) => {
 
 // ---------------------
 
-
-
-
-
 // const sheki = []
 // const azAbrau = []
+
+
 // function onChange(e) {
 //     if(e.target.checked){
 //         sheki.push()
 //     }
 // }
+
+const inputValue = document.querySelectorAll('.filter-attribute-item')
+console.log(inputValue);
+
+const allInputs = document.querySelectorAll(".all-input")
+
+allInputs.forEach((input) => {
+    input.addEventListener("change", function (e) {
+        const { value } = e.target;
+
+        if (this.checked) {
+            allInputs.forEach(cb => {
+                if (cb !== this) {
+                    cb.checked = false;
+                }
+            });
+
+            fetch(`https://azabrau-backend.vercel.app/wines?brand=${value}`).then((res) => res.json()).then(data => {
+                productsContainer.innerHTML = ""
+
+                data.forEach((card) => {
+                    const { title, description, image, spirt } = card;
+                    productsContainer.innerHTML += `
+                <div class="products-card d-flex flex-column align-center">
+                <a class="products-card-link" href=""></a>
+                    <img src="${image}" alt="">
+                    <h3 class="products-card-title">${title}</h3>
+                    <p class="products-card-description">Çeşid: ${description}</p>
+                    <p class="spirt">Spirt: ${spirt}</p>
+        
+                    <a class="products-card-btn" href="">Ətraflı</a>
+                </div>
+                `
+                })
+            }).catch((error) => console.log(error))
+        } else {
+            getAllWines()
+        }
+    })
+})
+
+
