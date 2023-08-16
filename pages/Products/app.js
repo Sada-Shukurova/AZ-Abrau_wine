@@ -1,5 +1,7 @@
 const productsContainer = document.querySelector('.products-container')
 
+
+
 fetch("https://azabrau-backend.vercel.app/wines").then((res) => res.json())
     .then(data => {
         data.forEach((card) => {
@@ -20,6 +22,8 @@ fetch("https://azabrau-backend.vercel.app/wines").then((res) => res.json())
 
 
 // filter
+
+// filter heading
 const filterHeading = document.querySelectorAll('.filter-item-inner-heading');
 const filterContent = document.querySelectorAll('.filter-items-inner');
 
@@ -30,6 +34,16 @@ filterHeading.forEach((heading, index) => {
     });
 });
 
+// ---------------------
 
 
 
+
+
+// const sheki = []
+// const azAbrau = []
+// function onChange(e) {
+//     if(e.target.checked){
+//         sheki.push()
+//     }
+// }
