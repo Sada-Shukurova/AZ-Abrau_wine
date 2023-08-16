@@ -133,7 +133,9 @@ nav {
     transition: 0.3s all ease-out;
     position: relative;
 }
-
+.navLink.activeNav{
+    text-decoration: underline;
+}
 .navLink::after {
     content: '';
     width: 0%;
