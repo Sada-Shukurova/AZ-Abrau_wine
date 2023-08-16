@@ -1,6 +1,6 @@
 const productsContainer = document.querySelector('.products-container')
 
-fetch("http://localhost:3000/wines").then((res) => res.json())
+fetch("https://azabrau-backend.vercel.app/wines").then((res) => res.json())
     .then(data => {
         data.forEach((card) => {
             const { title, description, image, spirt } = card;
@@ -19,8 +19,17 @@ fetch("http://localhost:3000/wines").then((res) => res.json())
     }).catch((error) => console.log(error))
 
 
-    // filter
-const filterHeading=document.querySelector('..filter-item-inner-heading ')
+// filter
+const filterHeading = document.querySelectorAll('.filter-item-inner-heading');
+const filterContent = document.querySelectorAll('.filter-items-inner');
+
+filterHeading.forEach((heading, index) => {
+    heading.addEventListener('click', function () {
+        heading.classList.toggle('plus');
+        filterContent[index].classList.toggle('hiddenFilter');
+    });
+});
+
 
 
 
