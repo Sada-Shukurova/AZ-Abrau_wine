@@ -30,9 +30,11 @@ mobileCloseIcon.addEventListener('click', function () {
 })
 // ------------------
 
-document.addEventListener("DOMContentLoaded", getAllWines)
 
 // fetching data
+
+document.addEventListener("DOMContentLoaded", getAllWines)
+
 const productsContainer = document.querySelector('.products-container')
 
 function getAllWines() {
@@ -81,7 +83,7 @@ const allFilterInputs = document.querySelectorAll(".all-filter-input")
 allFilterInputs.forEach((input) => {
     input.addEventListener("change", function (e) {
         const { value, name } = e.target;
-        console.log(e.target);
+        // console.log(e.target);
 
         if (this.checked) {
             allFilterInputs.forEach((elem) => {
@@ -113,3 +115,18 @@ allFilterInputs.forEach((input) => {
         }
     })
 });
+
+
+
+// search
+const searchBox = document.querySelector('.search-box')
+const searchInput = document.querySelector('search-input')
+
+searchBox.addEventListener('click', function () {
+    searchBox.classList.toggle('open-search');
+    searchBox.style.justifyContent='flex-end';
+
+})
+
+console.log(searchInput);
+console.log(searchBox);
