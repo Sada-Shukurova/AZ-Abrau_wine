@@ -59,10 +59,9 @@ function getAllWines() {
 }
 
 
-
 // filter
 
-// filter heading
+// filter heading change
 const filterHeading = document.querySelectorAll('.filter-item-inner-heading');
 const filterContent = document.querySelectorAll('.filter-items-inner');
 
@@ -75,33 +74,23 @@ filterHeading.forEach((heading, index) => {
 
 // ---------------------
 
-// const sheki = []
-// const azAbrau = []
+// actual filter checkbox 
 
+const allFilterInputs = document.querySelectorAll(".all-filter-input")
 
-// function onChange(e) {
-//     if(e.target.checked){
-//         sheki.push()
-//     }
-// }
-
-const inputValue = document.querySelectorAll('.filter-attribute-item')
-console.log(inputValue);
-
-const allInputs = document.querySelectorAll(".all-input")
-
-allInputs.forEach((input) => {
+allFilterInputs.forEach((input) => {
     input.addEventListener("change", function (e) {
-        const { value } = e.target;
+        const { value, name } = e.target;
+        console.log(e.target);
 
         if (this.checked) {
-            allInputs.forEach(cb => {
-                if (cb !== this) {
-                    cb.checked = false;
+            allFilterInputs.forEach((elem) => {
+                if (elem !== this) {
+                    elem.checked = false;
                 }
             });
 
-            fetch(`https://azabrau-backend.vercel.app/wines?brand=${value}`).then((res) => res.json()).then(data => {
+            fetch(`https://azabrau-backend.vercel.app/wines?${name}=${value}`).then((res) => res.json()).then(data => {
                 productsContainer.innerHTML = ""
 
                 data.forEach((card) => {
@@ -113,7 +102,7 @@ allInputs.forEach((input) => {
                     <h3 class="products-card-title">${title}</h3>
                     <p class="products-card-description">Çeşid: ${description}</p>
                     <p class="spirt">Spirt: ${spirt}</p>
-        
+
                     <a class="products-card-btn" href="">Ətraflı</a>
                 </div>
                 `
@@ -123,6 +112,4 @@ allInputs.forEach((input) => {
             getAllWines()
         }
     })
-})
-
-
+});
