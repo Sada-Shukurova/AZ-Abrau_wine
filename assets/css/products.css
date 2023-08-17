@@ -223,7 +223,7 @@ nav {
     padding: 5px;
     border: 1px solid transparent;
     border-radius: 4px;
-    transition: 0.4s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 .social-container a:hover {
@@ -325,6 +325,7 @@ main {
 
 .products-container .products-card .products-card-title {
     font-size: 21px;
+    width: 8ch;
 }
 
 .products-container .products-card .products-card-description,
@@ -488,6 +489,16 @@ p.footer-bold-txt {
     width: 60%;
 }
 
+footer a {
+    transition: 0.4s all ease-in-out;
+}
+
+footer a:hover {
+    scale: 1.1;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 /* footer end */
 
 
@@ -586,6 +597,10 @@ p.footer-bold-txt {
 @media only screen and (max-width: 870px) {
     .container {
         max-width: 730px;
+    }
+
+    .products-card-btn {
+        width: 100%;
     }
 
     /* footer */
@@ -922,6 +937,10 @@ p.footer-bold-txt {
 @media only screen and (max-width: 300px) {
     .container {
         max-width: 200px;
+    }
+
+    .products-card-btn {
+        padding: 5px 10px;
     }
 
     /* footer */
