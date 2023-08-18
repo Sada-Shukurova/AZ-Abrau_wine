@@ -18,6 +18,7 @@ html {
     --brown: rgba(151, 77, 36, 1);
     --cream: rgba(244, 229, 212, 1);
     --creamDark: #E7D2BB;
+    --numbers: #DDC6AE;
 }
 
 @font-face {
@@ -251,10 +252,12 @@ header.sticky-header {
 /* header end */
 
 /* about start */
-.hero-top>a {
-    position: absolute;
+main {
+    background-color: var(--cream);
 }
 
+
+/* about top video */
 .about-video-bg {
     background: #000000;
     opacity: 0.3;
@@ -287,4 +290,183 @@ header.sticky-header {
     padding: 5px;
     text-align: center;
     font-size: 1.3rem;
+}
+
+/* --------video */
+/* about bottom */
+.currentNav {
+    color: gray;
+}
+
+.hero-bottom {
+    padding: 70px 0;
+}
+
+.about-first-top-wrapper {
+    position: relative;
+}
+
+.about-first-img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-first-number {
+    color: var(--numbers);
+    text-align: center;
+    font-size: 250px;
+    font-weight: 700;
+    opacity: 0.35;
+}
+
+.about-first-title {
+    color: var(--brown);
+    font-size: 55px;
+    font-weight: 400;
+    width: 4ch;
+    position: absolute;
+    top: 18%;
+    left: 14%;
+}
+
+.about-first-text-wrapper {
+    background-color: var(--creamDark);
+    width: 60%;
+    padding: 45px 57px;
+    align-self: center;
+}
+
+.about-first-text-wrapper p {
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+/* middle */
+.about-first-middle-wrapper,
+.about-first-bottom-wrapper {
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-first-middle-title {
+    color: var(--brown);
+    font-size: 55px;
+    font-weight: 400;
+    width: 4ch;
+    position: absolute;
+    top: 18%;
+    right: 22%;
+    z-index: 2;
+}
+
+.about-first-title.bottom-title {
+    left: 15%;
+}
+
+/* top image before */
+
+.about-first-img-wrapper.top-img-wrapper::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+/* top text before */
+.about-first-text-wrapper.top-txt-wrapper {
+    position: relative;
+}
+
+.about-first-text-wrapper.top-txt-wrapper::before {
+    content: '';
+    width: 17.8%;
+    height: 1px;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    left: -16.6%;
+}
+
+.about-first-text-wrapper.top-txt-wrapper::after {
+    content: '';
+    width: 1px;
+    height: 18%;
+    background-color: var(--creamDark);
+    position: absolute;
+    bottom: -18%;
+    left: 0;
+}
+
+/* middle img before/after */
+.about-first-img-wrapper.middle-img-wrapper::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    right: 9%;
+}
+
+.about-first-img-wrapper.middle-img-wrapper::before {
+    content: '';
+    width: 36.8%;
+    height: 1px;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    right: 9%;
+}
+
+/* middle text before/after */
+.about-first-text-wrapper.middle-txt {
+    position: relative
+}
+
+.about-first-text-wrapper.middle-txt::before {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    right: -18.3%;
+}
+
+.about-first-text-wrapper.middle-txt::after {
+    content: '';
+    width: 1px;
+    height: 18%;
+    background-color: var(--creamDark);
+    position: absolute;
+    bottom: -18%;
+    right: 0%;
+}
+
+/* bottom img before/after */
+.about-first-img-wrapper.bottom-img-wrapper {
+    position: relative;
+}
+
+.about-first-img-wrapper.bottom-img-wrapper::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    left: -68%;
+}
+
+.about-first-img-wrapper.bottom-img-wrapper::after {
+    content: '';
+    width: 68%;
+    height: 1px;
+    background-color: var(--creamDark);
+    position: absolute;
+    top: 0;
+    left: -68%;
 }
