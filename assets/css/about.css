@@ -249,3 +249,42 @@ header.sticky-header {
 }
 
 /* header end */
+
+/* about start */
+.hero-top>a {
+    position: absolute;
+}
+
+.about-video-bg {
+    background: #000000;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+
+.about-video-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-icon {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+}
+
+.about-video-txt {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+}
