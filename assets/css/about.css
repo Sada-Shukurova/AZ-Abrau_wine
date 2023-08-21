@@ -273,7 +273,7 @@ main {
     position: relative;
 }
 
-.video-icon {
+.video-icon a svg {
     position: absolute;
     z-index: 5;
     top: 50%;
@@ -297,7 +297,9 @@ main {
 .currentNav {
     color: gray;
 }
-
+.hero-top{
+    position: relative;
+}
 .hero-bottom {
     padding: 70px 0;
 }
@@ -458,7 +460,7 @@ main {
     background-color: var(--creamDark);
     position: absolute;
     top: 0;
-    left: -68%;
+    left: -50%;
 }
 
 .about-first-img-wrapper.bottom-img-wrapper::after {
@@ -468,7 +470,7 @@ main {
     background-color: var(--creamDark);
     position: absolute;
     top: 0;
-    left: -68%;
+    left: -50%;
 }
 
 .text-line {
@@ -482,7 +484,7 @@ main {
     background-color: var(--creamDark);
     position: absolute;
     top: 0;
-    left: -18.3%;
+    left: -17%;
 }
 
 /* awards start */
@@ -576,7 +578,7 @@ main {
 /* awards2 start */
 .awards-section{
     background-color: var(--cream);
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .awards-small-heading{
     color: var(--brown);
@@ -651,7 +653,7 @@ footer a:hover {
     .container {
         width: 1310px;
     }
-    
+
 }
 
 @media only screen and (max-width: 1440px) {
