@@ -52,6 +52,10 @@ let swiper = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 10,
   breakpoints: {
+    0:{
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
     320: {
       slidesPerView: 1,
       spaceBetween: 20
