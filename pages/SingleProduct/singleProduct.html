@@ -134,27 +134,13 @@
             <section class="topSection d-flex justify-between">
                 <div class="top-left">
                     <div class="top-left-bg-img-container">
-                        <img class="round-bg" src="../../assets/images/singleProduct/bottle-bg.png" alt="backgroung">
-                        <img class="bottle-img" src="../../assets/images/wine2.png" alt="bottle">
+                        <!-- fetching data -->
                     </div>
                 </div>
                 <div class="top-right">
                     <div class="top-right-content-container  d-flex flex-column">
-                        <h2 class="wine-name">Cullen</h2>
-                        <p class="wine-description-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-                            adipiscing tortor scelerisque auctor egestas viverra.</p>
-                        <h3 class="wine-country-title">Mənşəyi</h3>
-                        <p class="wine-country">Lorem ipsum</p>
-                        <h3 class="wine-alcohol-title">Alkoqol dərəcəsi</h3>
-                        <p class="wine-alcohol">15%</p>
-                        <h3 class="wine-year-title">İstehsal ili</h3>
-                        <p class="wine-year">1985</p>
-                        <h3 class="wine-description-title">Məhsul haqqında</h3>
-                        <p class="wine-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-                            adipiscing tortor scelerisque auctor egestas viverra. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.Urna adipiscing tortor scelerisque auctor egestas viverra.</p>
+
                         <img class="wolt" src="../../assets/images/singleProduct/wolt.png" alt="wolt logo">
-                    </div>
                     <img class="grapes-bg-img" src="../../assets/images/singleProduct/bg-grape.png" alt="grapes">
                 </div>
             </section>
@@ -182,8 +168,9 @@
                             </defs>
                         </svg>
                         <h3 class="middle-card-title">Tərkibi</h3>
-                        <p class="middle-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Urna adipiscing tortor scelerisque auctor egestas viverra.</p>
+                        <p id="ingredients" class="middle-card-description">
+                            <!-- fetch -->
+                        </p>
                     </div>
 
                     <div class="middle-section-content-card d-flex flex-column align-center">
@@ -200,8 +187,9 @@
                             </defs>
                         </svg>
                         <h3 class="middle-card-title">Uygunluq</h3>
-                        <p class="middle-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Urna adipiscing tortor scelerisque auctor egestas viverra.</p>
+                        <p id="dishes" class="middle-card-description">
+                            <!-- fetch -->
+                        </p>
                     </div>
 
                     <div class="middle-section-content-card d-flex flex-column align-center">
@@ -221,8 +209,9 @@
                             </defs>
                         </svg>
                         <h3 class="middle-card-title">Temperatur</h3>
-                        <p class="middle-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Urna adipiscing tortor scelerisque auctor egestas viverra.</p>
+                        <p id="temperature" class="middle-card-description">
+                            <!-- fetch -->
+                        </p>
                     </div>
 
                     <div class="middle-section-content-card d-flex flex-column align-center">
@@ -250,14 +239,17 @@
                                 fill="#4C192A" />
                         </svg>
                         <h3 class="middle-card-title">Saxlama forması</h3>
-                        <p class="middle-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Urna adipiscing tortor scelerisque auctor egestas viverra.</p>
+                        <p id="storage" class="middle-card-description">
+                            <!-- fetch -->
+                        </p>
                     </div>
                 </div>
             </section>
 
             <section class="bottom-section">
-
+                <div class="bottom-section-products-container d-flex justify-between">
+<!-- fetching data -->
+                </div>
             </section>
         </div>
     </main>
@@ -336,6 +328,10 @@
         </div>
     </footer>
     <!-- footer end -->
+    <script src="
+https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+"></script>
+
     <script src="../SingleProduct/singleProduct.js"></script>
 </body>
 
