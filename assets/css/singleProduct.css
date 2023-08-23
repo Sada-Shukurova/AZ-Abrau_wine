@@ -345,6 +345,8 @@ main {
 /* middle section */
 .middleSection {
     padding: 80px 0;
+    z-index: 4;
+    position: relative;
 }
 
 .middle-section-content-container {
@@ -521,16 +523,27 @@ footer a:hover {
         width: 95px;
     }
 
-    /* filter */
-    .main-left-filter-head {
-        flex-direction: column;
-        gap: 5px;
+    /* top right */
+    .top-right-content-container {
+        width: 90%;
     }
+
+    .middle-card-description {
+        width: 220px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1027px) {
     .container {
         max-width: 890px;
+    }
+
+    /* top section */
+    .grapes-bg-img {
+        top: 65%;
+        right: 3%;
     }
 }
 
@@ -551,6 +564,27 @@ footer a:hover {
     .navLink {
         font-size: 14px;
     }
+
+    /* left section */
+    .round-bg {
+        border-radius: 50%;
+        width: 87%;
+    }
+
+    .bottle-img {
+        width: 26%;
+        top: -47px;
+        left: 42%;
+    }
+
+    /* right section */
+    .middle-card-description {
+        width: 160px;
+    }
+
+    .storageSvg {
+        height: 55px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
@@ -559,6 +593,11 @@ footer a:hover {
     }
 
     .products-card-btn {
+        width: 100%;
+    }
+
+    /* right section */
+    .top-right-content-container {
         width: 100%;
     }
 
@@ -714,6 +753,44 @@ footer a:hover {
         max-width: 500px;
     }
 
+    /* left section */
+    .round-bg {
+        width: 90%;
+    }
+
+    .bottle-img {
+        width: 31%;
+        top: -57px;
+        left: 45%;
+    }
+
+    /* middle section */
+    .middle-card-description {
+        width: 100%;
+    }
+
+    .middle-section-content-container {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .middle-section-content-card {
+        width: 30%;
+    }
+
+    .middle-section-content-card:nth-child(3) {
+        border-right: none;
+    }
+
+    #grapeSvg {
+        height: 62px;
+    }
+
+    /* bottom section */
+    .bottom-section-products-container {
+        flex-wrap: wrap;
+    }
 
     /* footer */
     .footer-top {
@@ -726,6 +803,7 @@ footer a:hover {
     }
 }
 
+
 /* MOBILE */
 @media only screen and (max-width: 565px) {
     .container {
@@ -735,6 +813,55 @@ footer a:hover {
     /* mobile header */
     .mobile-header {
         width: 100%;
+    }
+
+    /* top section */
+    .topSection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .top-left,
+    .top-right {
+        width: 100%;
+    }
+
+    .top-left {
+        margin-bottom: 30px;
+    }
+
+    .bottle-img {
+        width: 26%;
+        top: -43px;
+        left: 45%;
+    }
+
+    /* right */
+    .top-right-content-container {
+        align-items: center;
+    }
+
+    .wolt {
+        float: right;
+    }
+
+    .grapes-bg-img {
+        top: 44%;
+        right: -3%;
+    }
+
+    /* bottom section */
+    .bottom-section-products-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .products-card {
+        width: 100%;
+    }
+
+    .products-card-btn {
+        width: 50%;
     }
 
     /* footer */
@@ -772,18 +899,28 @@ footer a:hover {
         max-width: 320px;
     }
 
-
+    /* middle section*/
+    .middle-section-content-container {
+        flex-direction: column;
+    }
+    .middle-section-content-card {
+        width: 100%;
+        border: 0;
+    }
+    
     /* footer */
     p.footer-bold-txt {
         margin-right: 0;
-        width: 100%;
+        width: 30%;
         text-align: start;
     }
-
+    
     .address-column div {
         gap: 10px;
     }
 }
+
+
 
 @media only screen and (max-width: 370px) {
     .container {
@@ -794,7 +931,21 @@ footer a:hover {
     #mobile-nav .navLink {
         font-size: 18px;
     }
+    /* top */
 
+    /* right */
+    .top-right-content-container *{
+        font-size: larger;
+    }
+    .wine-name{
+        text-align: center;
+        font-size: 40px;
+    }
+    /* middle */
+    .middleSection {
+        padding: 0;
+
+}
 }
 
 @media only screen and (max-width: 300px) {
