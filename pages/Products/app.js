@@ -43,10 +43,10 @@ function getAllWines() {
             productsContainer.innerHTML = "";
 
             data.forEach((card) => {
-                const { title, description, image, spirt } = card;
+                const { title, description, image, spirt, id } = card;
                 productsContainer.innerHTML += `
             <div class="products-card d-flex flex-column align-center">
-            <a class="products-card-link" href=""></a>
+            <a class="products-card-link" href="../singleProduct/singleProduct.html?id=${id}"></a>
                 <img src="${image}" alt="">
                 <h3 class="products-card-title">${title}</h3>
                 <p class="products-card-description">Çeşid: ${description}</p>
@@ -59,7 +59,6 @@ function getAllWines() {
         }).catch((error) => console.log(error))
 
 }
-
 
 // filter
 
@@ -105,7 +104,7 @@ allFilterInputs.forEach((input) => {
                     <p class="products-card-description">Çeşid: ${description}</p>
                     <p class="spirt">Spirt: ${spirt}</p>
 
-                    <a class="products-card-btn" href="">Ətraflı</a>
+                    <a class="products-card-btn" href="./asdasd">Ətraflı</a>
                 </div>
                 `
                 })
@@ -124,7 +123,7 @@ const searchInput = document.querySelector('search-input')
 
 searchBox.addEventListener('click', function () {
     searchBox.classList.toggle('open-search');
-    searchBox.style.justifyContent='flex-end';
+    searchBox.style.justifyContent = 'flex-end';
 
 })
 
