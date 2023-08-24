@@ -262,6 +262,124 @@ header.sticky-header {
 
 /* hero end */
 
+/* main start */
+.currentNav {
+    color: gray;
+}
+
+main {
+    background-color: var(--cream);
+}
+
+.topNav-small {
+    padding: 30px 0;
+}
+
+/*  */
+.news-top {
+    padding: 60px 0;
+    gap: 30px;
+    position: relative;
+}
+
+.linkTopSection {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.news-top-left,
+.news-top-right {
+    width: 50%;
+}
+
+.news-top-left img {
+    width: 100%;
+}
+
+/* right */
+.news-top-right {
+    gap: 30px;
+}
+
+.news-top-heading {
+    color: var(--brown);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.news-top-date {
+    color: #838383;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news-top-description {
+    color: #4C192A;
+    font-family: Legan;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.news-top-btn {
+    border: 1px solid var(--brown);
+    border-radius: 4px;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    transition: 0.4s all ease-in-out;
+}
+
+.news-top:hover .news-top-btn {
+    background-color: var(--brown);
+    color: white;
+}
+
+/* news bottom */
+.news-bottom {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 0 70px 0;
+}
+
+.news-bottom-container {
+    width: calc(100% / 3 - 20px);
+    position: relative;
+}
+
+.newsLink-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.news-bottom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-bottom-heading,
+.news-bottom-date {
+    color: #FAFAFD;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.news-bottom-heading {
+    top: 10%;
+    left: 5%;
+}
+
+.news-bottom-date {
+    font-size: 18px;
+    top: 80%;
+    right: 5%;
+}
+
+/* main end */
 
 /* footer start */
 .footer-top-container {
@@ -639,10 +757,12 @@ footer a:hover {
     .container {
         max-width: 250px;
     }
-/* video */
-.about-video-txt{
-    display: none;
-}
+
+    /* video */
+    .about-video-txt {
+        display: none;
+    }
+
     /* mobile nav */
     #mobile-nav .navLink {
         font-size: 18px;
