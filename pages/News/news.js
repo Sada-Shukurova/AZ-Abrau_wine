@@ -29,3 +29,37 @@ mobileCloseIcon.addEventListener('click', function () {
     mobileSocial.style.opacity = '0';
 })
 // ------------------
+
+
+// fetching data
+document.addEventListener("DOMContentLoaded", getAllNews);
+
+const url = "https://azabrau-backend.vercel.app/news";
+const newsTop = document.querySelector(".news-top");
+
+function getAllNews() {
+    fetch(url)
+        .then(resp => resp.json())
+        .then(data => {
+            newsTop.innerHTML = "";
+            data.forEach((news) => {
+                const { newsTitle,
+                    newsDescription,
+                    image,
+                    date } = news;
+                newsTop.innerHTML += `
+                    <a class="linkTopSection" href="#singlenews"></a>
+                <div class="news-top-left">
+                    <img src="${image}" alt="wine bottle">
+                </div>
+                <div class="news-top-right d-flex flex-column">
+                    <h2 class="news-top-heading">${newsTitle}</h2>
+                    <h3 class="news-top-date">${date}</h3>
+                    <p class="news-top-description">${newsDescription}</p>
+                    <a href="#" class="news-top-btn">Ətraflı</a>
+                </div>
+                    `;
+
+            })
+        })
+}
