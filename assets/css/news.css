@@ -274,6 +274,12 @@ main {
 .topNav-small {
     padding: 30px 0;
 }
+.topNav-small a{
+    transition: 0.4s all ease-in-out;
+}
+.topNav-small a:hover{
+    text-decoration: underline;
+}
 
 /*  */
 .news-top {
@@ -282,12 +288,6 @@ main {
     position: relative;
 }
 
-.linkTopSection {
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    position: absolute;
-}
 
 .news-top-left,
 .news-top-right {
@@ -331,7 +331,7 @@ main {
     transition: 0.4s all ease-in-out;
 }
 
-.news-top:hover .news-top-btn {
+.news-top-btn:hover {
     background-color: var(--brown);
     color: white;
 }
@@ -346,6 +346,10 @@ main {
 .news-bottom-container {
     width: calc(100% / 3 - 20px);
     position: relative;
+    transition: 0.4s all ease-in-out;
+}
+.news-bottom-container:hover{
+box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 .newsLink-bottom {

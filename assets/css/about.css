@@ -305,6 +305,12 @@ main {
 .hero-bottom {
     padding: 70px 0;
 }
+.hero-bottom a{
+    transition: 0.4s all ease-in-out;
+}
+.hero-bottom a:hover{
+    text-decoration: underline;
+}
 
 .about-first-top-wrapper {
     position: relative;
