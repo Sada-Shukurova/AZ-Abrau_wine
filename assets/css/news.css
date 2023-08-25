@@ -885,14 +885,15 @@ footer a:hover {
         max-width: 250px;
     }
 
-   /* hero */
-   .hero h1 {
-    font-size: 38px;
-}
-/* main card */
-.news-bottom-heading {
-    font-size: 18px;
-}
+    /* hero */
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    /* main card */
+    .news-bottom-heading {
+        font-size: 18px;
+    }
 
     /* mobile nav */
     #mobile-nav .navLink {
@@ -906,13 +907,16 @@ footer a:hover {
     .container {
         max-width: 200px;
     }
-/* main */
-.news-bottom-container {
-    height: 255px;
-}
-.news-top-heading{
-    text-align: center;
-}
+
+    /* main */
+    .news-bottom-container {
+        height: 255px;
+    }
+
+    .news-top-heading {
+        text-align: center;
+    }
+
     /* footer */
     .address-column div {
         gap: 0;
