@@ -789,17 +789,17 @@ footer a:hover {
     .news-bottom-date {
         font-size: 25px;
     }
+    /* footer */
+    .footer-top {
+        flex-wrap: wrap;
+    }
+    
+    .footer-social {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
 
-/* footer */
-.footer-top {
-    flex-wrap: wrap;
-}
-
-.footer-social {
-    flex-direction: row;
-    align-items: baseline;
-}
 
 
 /* MOBILE */
