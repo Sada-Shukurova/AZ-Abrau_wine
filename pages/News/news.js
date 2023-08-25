@@ -62,7 +62,7 @@ function getTopNews() {
                     <h2 class="news-top-heading">${newsTitle}</h2>
                     <h3 class="news-top-date">${date}</h3>
                     <p class="news-top-description">${newsDescription}</p>
-                    <a href="#singleNews" class="news-top-btn">Ətraflı</a>
+                    <a href="../singleNews/singleNews.html?id=${id}" class="news-top-btn">Ətraflı</a>
                 </div>
                     `;
                 })
