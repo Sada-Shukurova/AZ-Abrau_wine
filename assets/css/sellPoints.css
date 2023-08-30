@@ -294,7 +294,9 @@ main {
     font-weight: 400;
     padding: 40px 0;
 }
-
+.sellPoints-container{
+    gap: 30px;
+}
 .sellPoints-left {
     width: 40%;
 }
@@ -306,12 +308,14 @@ main {
 /* swiper */
 .swiper {
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
-
-.swiper .swiper-slide {
+.swiper-wrapper{
+    height: 500px;
+}
+.swiper-slide {
     width: 100%;
-    height: 104px;
+    height: 33%;
     font-size: 18px;
     background: transparent;
     justify-content: center;
@@ -319,7 +323,6 @@ main {
     padding: 30px ;
     display: flex;
     flex-direction: column;
-    background-color: purple;
 }
 
 .sell-slide-heading {
@@ -332,25 +335,32 @@ main {
 .mobile-number,
 .home-number {
     color: #4C192A;
-    font-family: Mondia;
+    font-family: Mondia,serif;
     font-size: 16px;
     font-weight: 400;
 }
 
 .mobile-number,
 .home-number {
-    font-family: Legan;
+    font-family: Legan,serif;
+    width: fit-content;
 }
 
 .swiper-btn {
     color: #4C192A;
-    font-family: Mondia;
+    font-family: Mondia,serif;
     font-size: 16px;
     font-weight: 500;
     text-decoration-line: underline;
-    align-self: flex-end;
+    align-self: center;
 }
-
+.swiper-scrollbar{
+    background-color: var(--creamDark);
+}
+.swiper-scrollbar-drag{
+    background-color: var(--brown);
+    cursor: pointer;
+}
 /* ====== */
 
 /* main end */
