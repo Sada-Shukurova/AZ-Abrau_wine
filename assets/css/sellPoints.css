@@ -303,11 +303,11 @@ main {
 .sellPoints-left {
     width: 40%;
 
-    /* &>.swiper {
+    &>.swiper {
         &>.swiper-scrollbar {
-            width: 10px;
+            width: 7px;
         }
-    } */
+    }
 }
 
 .sellPoints-right {
@@ -376,7 +376,9 @@ main {
     cursor: pointer;
 }
 
-
+#pointMap {
+    width: 100%;
+}
 
 
 /* ====== */
@@ -508,6 +510,12 @@ footer a:hover {
         font-size: 58px;
     }
 
+    /* main */
+    .sellPoints-container {
+        gap: 20px;
+    }
+
+
 }
 
 @media only screen and (max-width: 925px) {
@@ -533,6 +541,10 @@ footer a:hover {
         font-size: 53px;
     }
 
+    /* main */
+    .sellPoints-container {
+        padding-top: 20px;
+    }
 
 }
 
@@ -548,6 +560,11 @@ footer a:hover {
 
     .news-top-btn {
         width: 35%;
+    }
+
+    /* swiper */
+    .swiper-wrapper {
+        gap: 10px;
     }
 
     /* footer */
@@ -702,6 +719,7 @@ footer a:hover {
     }
 
 
+    
     /* footer */
     .footer-top {
         flex-wrap: wrap;

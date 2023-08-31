@@ -42,6 +42,16 @@ window.onload = () => {
     let swiper = new Swiper(".mySwiper", {
         direction: "vertical",
         slidesPerView: 3,
+        breakpoints: {
+            450: {
+                slidesPerView: 2,
+            },
+
+            870: {
+                slidesPerView: 3,
+            }
+
+        },
         mousewheel: {
             invert: true,
         },
