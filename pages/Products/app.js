@@ -117,15 +117,3 @@ allFilterInputs.forEach((input) => {
 
 
 
-// search
-const searchBox = document.querySelector('.search-box')
-const searchInput = document.querySelector('search-input')
-
-searchBox.addEventListener('click', function () {
-    searchBox.classList.toggle('open-search');
-    searchBox.style.justifyContent = 'flex-end';
-
-})
-
-console.log(searchInput);
-console.log(searchBox);
