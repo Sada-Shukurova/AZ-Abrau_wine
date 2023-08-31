@@ -33,18 +33,26 @@ mobileCloseIcon.addEventListener('click', function () {
 // ------------------
 
 
+
 // swiper
-let swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    slidesPerView: 3,
-    mousewheel: {
-        invert: true,
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-});
+
+
+window.onload = () => {
+    console.log("page is fully loaded");
+    let swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 3,
+        mousewheel: {
+            invert: true,
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        }
+    });
+
+};
+
 
 
 // ------------------
@@ -53,6 +61,9 @@ document.addEventListener("DOMContentLoaded", getSellPoints)
 
 
 const swiperWrapper = document.querySelector(".swiper-wrapper");
+const pointMap = document.getElementById('pointMap');
+
+// fetching addresses data
 
 function getSellPoints() {
     fetch("./sellPointDb.json")
@@ -60,7 +71,7 @@ function getSellPoints() {
         .then(data => {
             console.log(data)
             data.forEach((address) => {
-                const { id, sellTitle, sellAddress, mobile, tel, src } = address;
+                const { sellTitle, sellAddress, mobile, tel, src } = address;
 
                 swiperWrapper.innerHTML += `
                 <div class="swiper-slide">
@@ -68,11 +79,34 @@ function getSellPoints() {
                                 <p class="sell-slide-address">${sellAddress}</p>
                                 <a class="mobile-number" href="tel:${mobile}">${mobile}</a>
                                 <a class="home-number" href="tel:${tel}">${tel}</a>
-                                <a href="${src}" class="swiper-btn">Xəritədə bax</a>
-                            </div>
-            `
+                                <span class="swiper-btn" data-src="${src}">Xəritədə bax</span>
+                                </div>
+                                `
+                // <span onclick="changeMapLocation(this)" class="swiper-btn" data-src="${src}">Xəritədə bax</span> 
+
             })
         }).catch((error) => console.log(error))
+        .finally(() => {
+            changeMapLocation()
+        })
+};
+
+// const changeMapLocation = (span) => {
+//     pointMap.src = span.dataset.src
+// }
+
+
+
+// changing map location and showing it
+
+function changeMapLocation() {
+    const btns = document.querySelectorAll(".swiper-btn")
+
+    btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            console.log(e.target)
+            pointMap.src = e.target.dataset.src
+        })
+    })
+
 }
-
-
