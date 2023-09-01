@@ -334,6 +334,7 @@ main {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .sell-slide-heading {
@@ -718,7 +719,10 @@ footer a:hover {
         max-width: 500px;
     }
 
-
+/* swiper */
+.swiper-slide{
+    padding: 0;
+}
     
     /* footer */
     .footer-top {
@@ -746,6 +750,17 @@ footer a:hover {
     /* hero */
     .hero h1 {
         font-size: 50px;
+    }
+
+    /* swiper */
+    .sellPoints-container{
+        flex-direction: column;
+    }
+    .sellPoints-left,.sellPoints-right{
+        width: 100%;
+    }
+    .swiper-wrapper {
+        height: 400px;
     }
 
     /* footer */
@@ -785,6 +800,11 @@ footer a:hover {
         max-width: 320px;
     }
 
+/* main */
+.hero h1 {
+    font-size: 43px;
+}
+
     /* footer */
     p.footer-bold-txt {
         margin-right: 0;
@@ -820,8 +840,6 @@ footer a:hover {
     .container {
         max-width: 200px;
     }
-
-
 
     /* footer */
     .address-column div {
