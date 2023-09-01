@@ -43,8 +43,8 @@ window.onload = () => {
         direction: "vertical",
         slidesPerView: 3,
         breakpoints: {
-            450: {
-                slidesPerView: 2,
+            0:{
+                slidesPerView:2,
             },
 
             870: {
