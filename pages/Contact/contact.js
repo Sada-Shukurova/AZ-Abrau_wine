@@ -7,6 +7,16 @@ const userSurname = document.querySelector('#userSurname');
 const userMail = document.querySelector('#userMail');
 const userTel = document.querySelector('#userTel');
 const userComment = document.querySelector('#userComment');
+// form button
+const formSubmit = document.querySelector('.formSubmit');
+// modal
+// const modal = document.getElementById('modal');
+// const closeModal = document.querySelector('.close-modal');
+// closeModal.addEventListener('click', () => {
+//     modal.classList.remove('modalOpen');
+// }
+// )
+
 
 let usernameValue, userSurnameValue, userMailValue, userTelValue, userFullNameValue, userMessageValue;
 
@@ -35,7 +45,7 @@ form.addEventListener('submit', (e) => {
         message: userMessageValue
     };
 
-    fetch('', {
+    fetch('http://localhost:3000/requests', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -44,22 +54,44 @@ form.addEventListener('submit', (e) => {
     })
         .then(response => {
             if (response.ok) {
-                // Show a success toast
                 console.log('Request submitted successfully');
+                // open modal
+                // modal.classList.add('modalOpen');
+                 
+                Swal.fire({
+                    title: 'Rəy bildirdiyiniz üçün təşəkkür edirik!🍷',
+                    showClass: {
+                      popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp'
+                    },
+                    confirmButtonText: 'CLOSE'
+                  })
                 // Clear the input fields
                 usernameValue = '';
                 userSurnameValue = '';
                 userMailValue = '';
                 userMessageValue = '';
                 userTelValue = '';
+
                 // Reset the form
                 form.reset();
             } else {
                 console.error('Error submitting request.');
             }
+
         })
         .catch(error => {
             console.log(error);
         });
-})
+});
+
+
+
+
+
+
+
+
 

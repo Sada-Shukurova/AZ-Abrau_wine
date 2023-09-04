@@ -306,6 +306,7 @@ main {
     font-family: Mondia;
     font-size: 18px;
     font-weight: 400;
+    position: relative;
 }
 
 .contact-bottom {
@@ -380,7 +381,53 @@ input:focus {
 
 /* ====== */
 
+/* modal */
+/* .modal {
+    position: relative;
+    border: 1px solid var(--brown);
+    border-radius: 5px;
+    background-color: var(--creamDark);
+    padding: 18px 15px;
+    text-align: center;
+    color: var(--brown);
+    bottom: 400px;
+    left: 30%;
+    width: 40%;
+    display: none;
+}
 
+.modalOpen {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.close-modal {
+    position: absolute;
+    top: -31%;
+    right: -3%;
+    cursor: pointer;
+}
+
+.close-modal svg path {
+    fill: var(--brown);
+} */
+
+/* modal  */
+.swal2-confirm {
+    background-color: var(--brown) !important;
+    /* Change button background color */
+    color: #fff;
+    /* Change button text color */
+}
+
+.swal2-popup {
+    background-color: #f0f0f0;
+    /* Change modal background color */
+    border: 2px solid var(--brown);
+    /* Change modal border */
+}
 
 /* main end */
 
@@ -503,6 +550,7 @@ footer a:hover {
     .smallInputs {
         width: 46%;
     }
+
 
 }
 
@@ -738,6 +786,7 @@ footer a:hover {
         font-size: 14px;
     }
 
+
     /* footer */
     .footer-top {
         flex-wrap: wrap;
@@ -785,6 +834,9 @@ footer a:hover {
         font-size: 18px;
     }
 
+    .swal2-popup {
+        width: 88%;
+    }
 
     /* footer */
     .footer-top {
@@ -838,6 +890,13 @@ footer a:hover {
         width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    /* modal */
+    .modal {
+        bottom: 500px;
+        left: 14%;
+        width: 72%;
     }
 
     /* footer */
