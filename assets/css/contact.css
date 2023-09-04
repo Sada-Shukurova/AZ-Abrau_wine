@@ -240,7 +240,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 90;
 }
 
 .mobile-header {
@@ -499,6 +499,11 @@ footer a:hover {
         width: 95px;
     }
 
+    /* main contact bottom */
+    .smallInputs {
+        width: 46%;
+    }
+
 }
 
 @media only screen and (max-width: 1027px) {
@@ -537,6 +542,10 @@ footer a:hover {
         font-size: 53px;
     }
 
+    /* main form */
+    .userForm {
+        width: 57%;
+    }
 
 }
 
@@ -554,6 +563,10 @@ footer a:hover {
         width: 35%;
     }
 
+    /* main form */
+    .userForm {
+        width: 65%;
+    }
 
     /* footer */
     .address-length {
@@ -587,7 +600,7 @@ footer a:hover {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 20;
+        z-index: 99;
         width: 60%;
         height: 100vh;
         display: flex;
@@ -690,6 +703,12 @@ footer a:hover {
 
     /* tablet menu end */
 
+    /* main form */
+    .userForm {
+        width: 70%;
+    }
+
+
     /* footer */
     .footer-top {
         gap: 40px;
@@ -706,6 +725,18 @@ footer a:hover {
         max-width: 500px;
     }
 
+    /* main form */
+    .userForm {
+        width: 80%;
+    }
+
+    .contact-info-heading {
+        font-size: 22px;
+    }
+
+    .contact-info-txt {
+        font-size: 14px;
+    }
 
     /* footer */
     .footer-top {
@@ -733,6 +764,25 @@ footer a:hover {
     /* hero */
     .hero h1 {
         font-size: 50px;
+    }
+
+    /* main form */
+    .userForm {
+        width: 100%;
+    }
+
+    .contact-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-info-heading {
+        font-size: 26px;
+    }
+
+    .contact-info-txt {
+        font-size: 18px;
     }
 
 
@@ -764,8 +814,8 @@ footer a:hover {
     .footer-bottom :last-child {
         order: 3;
     }
-}
 
+}
 
 
 @media only screen and (max-width: 470px) {
@@ -776,6 +826,18 @@ footer a:hover {
     /* main */
     .hero h1 {
         font-size: 43px;
+    }
+
+    /* form */
+    .smallInputsContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .smallInputs {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     /* footer */
