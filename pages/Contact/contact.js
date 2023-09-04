@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
         message: userMessageValue
     };
 
-    fetch('http://localhost:3000/requests', {
+    fetch('', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
