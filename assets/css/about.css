@@ -240,7 +240,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 9999;
 }
 
 .mobile-header {
@@ -305,10 +305,12 @@ main {
 .hero-bottom {
     padding: 70px 0;
 }
-.hero-bottom a{
+
+.hero-bottom a {
     transition: 0.4s all ease-in-out;
 }
-.hero-bottom a:hover{
+
+.hero-bottom a:hover {
     text-decoration: underline;
 }
 
@@ -1249,11 +1251,12 @@ footer a:hover {
     .award-cards-container {
         gap: 40px;
     }
+
     /* footer */
     .footer-top {
         flex-wrap: wrap;
     }
-    
+
     .footer-social {
         flex-direction: row;
         align-items: baseline;
@@ -1412,10 +1415,12 @@ footer a:hover {
     .container {
         max-width: 250px;
     }
-/* video */
-.about-video-txt{
-    display: none;
-}
+
+    /* video */
+    .about-video-txt {
+        display: none;
+    }
+
     /* mobile nav */
     #mobile-nav .navLink {
         font-size: 18px;

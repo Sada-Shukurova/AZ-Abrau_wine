@@ -240,7 +240,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 9999;
 }
 
 .mobile-header {
@@ -789,11 +789,12 @@ footer a:hover {
     .news-bottom-date {
         font-size: 25px;
     }
+
     /* footer */
     .footer-top {
         flex-wrap: wrap;
     }
-    
+
     .footer-social {
         flex-direction: row;
         align-items: baseline;

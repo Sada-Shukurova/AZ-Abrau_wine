@@ -239,7 +239,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 9999;
 }
 
 .mobile-header {
@@ -904,21 +904,23 @@ footer a:hover {
     .middle-section-content-container {
         flex-direction: column;
     }
+
     .middle-section-content-card {
         width: 100%;
         border: 0;
     }
-    .wine-name{
+
+    .wine-name {
         text-align: center;
     }
-    
+
     /* footer */
     p.footer-bold-txt {
         margin-right: 0;
         width: 30%;
         text-align: start;
     }
-    
+
     .address-column div {
         gap: 10px;
     }
@@ -935,20 +937,23 @@ footer a:hover {
     #mobile-nav .navLink {
         font-size: 18px;
     }
+
     /* top */
 
     /* right */
-    .top-right-content-container *{
+    .top-right-content-container * {
         font-size: larger;
     }
-    .wine-name{
+
+    .wine-name {
         font-size: 40px;
     }
+
     /* middle */
     .middleSection {
         padding: 0;
 
-}
+    }
 }
 
 @media only screen and (max-width: 300px) {

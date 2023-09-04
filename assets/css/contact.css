@@ -240,7 +240,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 9999;
 }
 
 .mobile-header {
@@ -283,14 +283,17 @@ main {
     gap: 10px;
     width: 200px;
 }
-.contact-info a{
+
+.contact-info a {
     transition: 0.5s all ease-in-out;
 }
-.contact-info a:hover{
-scale: 1.1;
-text-decoration: underline;
-text-underline-offset: 5px;
+
+.contact-info a:hover {
+    scale: 1.1;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
+
 .contact-info-heading {
     text-align: center;
     font-size: 26px;
@@ -304,23 +307,26 @@ text-underline-offset: 5px;
     font-size: 18px;
     font-weight: 400;
 }
-.contact-bottom{
+
+.contact-bottom {
     justify-content: center;
     margin: 50px auto;
 }
 
 /* contact form */
 
-.userForm{
+.userForm {
     width: 50%;
 }
-.smallInputsContainer{
+
+.smallInputsContainer {
     flex-wrap: wrap;
     gap: 20px;
 
 }
-.smallInputs{
-    width:48%;
+
+.smallInputs {
+    width: 48%;
     /* width: 295px; */
     padding: 15px 70px 15px 10px;
     outline: none;
@@ -328,7 +334,8 @@ text-underline-offset: 5px;
     background-color: var(--white);
     border-radius: 5px;
 }
-textarea{
+
+textarea {
     width: 100%;
     resize: none;
     border: none;
@@ -339,10 +346,12 @@ textarea{
     border-radius: 5px;
     transition: 0.4s all ease-in-out;
 }
-textarea:focus{
+
+textarea:focus {
     box-shadow: 0 0 10px var(--brown);
 }
-.formSubmit{
+
+.formSubmit {
     width: 30%;
     margin-top: 20px;
     text-align: center;
@@ -355,16 +364,20 @@ textarea:focus{
     transition: 0.5s all ease-in-out;
     cursor: pointer;
 }
-.formSubmit:hover{
-background-color: var(--brown);
-color: var(--white);
+
+.formSubmit:hover {
+    background-color: var(--brown);
+    color: var(--white);
 }
-input{
+
+input {
     transition: 0.4s all ease-in-out;
 }
-input:focus{
+
+input:focus {
     box-shadow: 0 0 10px var(--brown);
 }
+
 /* ====== */
 
 
