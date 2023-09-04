@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../../assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 
 <body>
@@ -154,14 +155,18 @@
             <section class="contact-bottom d-flex">
                 <form class="userForm d-flex flex-column align-center" action="" method="get">
                     <div class="smallInputsContainer d-flex justify-between">
-                        <input required class="smallInputs" placeholder="Adınız" type="text" name="username" id="username">
-                        <input required class="smallInputs" placeholder="Soyadınız" type="text" name="userSurname" id="userSurname">
-                        <input required class="smallInputs" placeholder="E-mail adresi" type="email" name="userMail" id="userMail">
-                        <input required class="smallInputs" placeholder="Telefon nömrəsi" type="tel" name="userTel" id="userTel">
+                        <input required class="smallInputs" placeholder="Adınız" type="text" name="username"
+                            id="username">
+                        <input required class="smallInputs" placeholder="Soyadınız" type="text" name="userSurname"
+                            id="userSurname">
+                        <input required class="smallInputs" placeholder="E-mail adresi" type="email" name="userMail"
+                            id="userMail">
+                        <input required class="smallInputs" placeholder="Telefon nömrəsi" type="text" name="userTel"
+                            id="userTel">
                     </div>
-                    <textarea placeholder="Əlavə qeyd" name="userComment" id="userComment" cols="30"
+                    <textarea required placeholder="Əlavə qeyd" name="userComment" id="userComment" cols="30"
                         rows="10"></textarea>
-                    <button class="formSubmit" type="submit">Ətraflı</button>
+                    <button class="formSubmit" type="submit">Göndər</button>
                 </form>
             </section>
         </div>
