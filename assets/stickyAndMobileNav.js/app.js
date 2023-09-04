@@ -6,8 +6,6 @@ window.addEventListener('scroll', function () {
     (window.scrollY >= navTop) ? nav.classList.add('sticky-header') : nav.classList.remove('sticky-header');
 })
 
-
-
 // mobile navigation
 const headerBurgerIcon = document.querySelector('.header-burger-icon')
 const mobileHeader = document.querySelector('.mobile-header')
@@ -31,3 +29,6 @@ mobileCloseIcon.addEventListener('click', function () {
     mobileSocial.style.opacity = '0';
 })
 // ------------------
+
+
+
