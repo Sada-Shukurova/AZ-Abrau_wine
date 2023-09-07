@@ -57,17 +57,17 @@ form.addEventListener('submit', (e) => {
                 console.log('Request submitted successfully');
                 // open modal
                 // modal.classList.add('modalOpen');
-                 
+
                 Swal.fire({
                     title: 'Rəy bildirdiyiniz üçün təşəkkür edirik!🍷',
                     showClass: {
-                      popup: 'animate__animated animate__fadeInDown'
+                        popup: 'animate__animated animate__fadeInDown'
                     },
                     hideClass: {
-                      popup: 'animate__animated animate__fadeOutUp'
+                        popup: 'animate__animated animate__fadeOutUp'
                     },
-                    confirmButtonText: 'CLOSE'
-                  })
+                    confirmButtonText: 'BAĞLA'
+                })
                 // Clear the input fields
                 usernameValue = '';
                 userSurnameValue = '';
