@@ -59,7 +59,7 @@ form.addEventListener("submit", (e) => {
     message: userMessageValue,
   };
 
-  fetch("http://localhost:3000/requests", {
+  fetch("https://azabrau-backend.vercel.app/requests", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
