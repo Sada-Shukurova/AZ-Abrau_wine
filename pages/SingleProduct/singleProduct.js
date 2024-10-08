@@ -1,53 +1,54 @@
-
-const url = 'https://azabrau-backend.vercel.app/wines'
-
+const url = "https://azabrau-backend.vercel.app/wines";
 
 // fetching data for single wine product left and right and middle section
-const topLeftBgImgContainer = document.querySelector('.top-left-bg-img-container');
-const topRightContentContainer = document.querySelector('.top-right-content-container');
-const cardIngredients = document.getElementById('ingredients');
-const cardDishes = document.getElementById('dishes');
-const cardTemperature = document.getElementById('temperature');
-const cardStorage = document.getElementById('storage');
+const topLeftBgImgContainer = document.querySelector(
+  ".top-left-bg-img-container"
+);
+const topRightContentContainer = document.querySelector(
+  ".top-right-content-container"
+);
+const cardIngredients = document.getElementById("ingredients");
+const cardDishes = document.getElementById("dishes");
+const cardTemperature = document.getElementById("temperature");
+const cardStorage = document.getElementById("storage");
 
-
-let productID = new URL(window.location.href).searchParams.get('id');
+let productID = new URL(window.location.href).searchParams.get("id");
 const newURL = `https://azabrau-backend.vercel.app/wines/${productID}`;
 
 document.addEventListener("DOMContentLoaded", getData);
 function getData() {
-    fetch(newURL).then((res) => res.json())
-        .then((data) => {
+  fetch(newURL)
+    .then((res) => res.json())
+    .then((data) => {
+      // console.log(data)
+      topLeftBgImgContainer.innerHTML = "";
+      topRightContentContainer.innerHTML = "";
+      otherProductsContainer.innerHTML = "";
+      cardIngredients.textContent = "";
+      cardDishes.textContent = "";
+      cardTemperature.textContent = "";
+      cardStorage.textContent = "";
 
-            // console.log(data)
-            topLeftBgImgContainer.innerHTML = "";
-            topRightContentContainer.innerHTML = "";
-            otherProductsContainer.innerHTML = '';
-            cardIngredients.textContent = "";
-            cardDishes.textContent = "";
-            cardTemperature.textContent = "";
-            cardStorage.textContent = "";
+      // data.forEach((wines) => {
+      const {
+        title,
+        description,
+        spirt,
+        image,
+        country,
+        year,
+        longDescription,
+        ingredients,
+        dishes,
+        temperature,
+        storage,
+      } = data;
 
-
-            // data.forEach((wines) => {
-            const {
-                title,
-                description,
-                spirt,
-                image,
-                country,
-                year,
-                longDescription,
-                ingredients,
-                dishes,
-                temperature,
-                storage } = data;
-
-            topLeftBgImgContainer.innerHTML = `
+      topLeftBgImgContainer.innerHTML = `
                 <img class="round-bg" src="../../assets/images/singleProduct/bottle-bg.png" alt="backgroung">
                 <img class="bottle-img" src="${image}" alt="bottle">
                 `;
-            topRightContentContainer.innerHTML = `
+      topRightContentContainer.innerHTML = `
                 <h2 class="wine-name">${title}</h2>
                 <p class="wine-description-top">${description}</p>
                 <h3 class="wine-country-title">Mənşəyi</h3>
@@ -60,32 +61,31 @@ function getData() {
                 <p class="wine-description">${longDescription}</p>
                 </div>
                 `;
-            cardIngredients.textContent = `${ingredients}`;
-            cardDishes.textContent = `${dishes}`;
-            cardTemperature.textContent = `${temperature}`;
-            cardStorage.textContent = `${storage}`;
-            // })
-
-        }).catch((error) => console.log(error))
+      cardIngredients.textContent = `${ingredients}`;
+      cardDishes.textContent = `${dishes}`;
+      cardTemperature.textContent = `${temperature}`;
+      cardStorage.textContent = `${storage}`;
+      // })
+    })
+    .catch((error) => console.log(error));
 }
 
-
-
 // fetching shuffeled data for bottom section
-const otherProductsContainer = document.querySelector('.bottom-section-products-container');
-
-
+const otherProductsContainer = document.querySelector(
+  ".bottom-section-products-container"
+);
 
 function getOtherWines() {
-    fetch(url).then((res => res.json()))
-        .then(data => {
-            otherProductsContainer.innerHTML = '';
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      otherProductsContainer.innerHTML = "";
 
-            // const shuffledData = data.sort(() => 0.5 - Math.random()).slice(0, 4);
-            const shuffledData = _.shuffle(data).slice(0, 4);
-            shuffledData.forEach((wine) => {
-                const { id, title, image, description, spirt } = wine;
-                otherProductsContainer.innerHTML += `
+      // const shuffledData = data.sort(() => 0.5 - Math.random()).slice(0, 4);
+      const shuffledData = _.shuffle(data).slice(0, 4);
+      shuffledData.forEach((wine) => {
+        const { id, title, image, description, spirt } = wine;
+        otherProductsContainer.innerHTML += `
 <div class="products-card d-flex flex-column align-center">
             <a class="products-card-link" href="./singleProduct.html?id=${id}"></a>
                 <img src="${image}" alt="">
@@ -95,8 +95,20 @@ function getOtherWines() {
     
                 <a class="products-card-btn" href="">Ətraflı</a>
             </div>
-`
-            })
-        }).catch((error) => console.log(error))
+`;
+      });
+    })
+    .catch((error) => console.log(error));
 }
 document.addEventListener("DOMContentLoaded", getOtherWines);
+// scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.getElementById("scrollToTop");
+
+  scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});

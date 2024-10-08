@@ -10,6 +10,8 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <!-- my css -->
+  <link rel="stylesheet" href="../../assets/css/common.css">
+
   <link rel="stylesheet" href="../../assets/css/index.css">
   <title>Az Abrau</title>
 </head>
@@ -114,16 +116,13 @@
   <section class="hero d-flex flex-column align-center justify-around">
     <div class="hero-top d-flex flex-column align-center">
       <h1 class="hero-top-heading">AZ ABRAU</h1>
-      <p class="hero-top-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has</p>
+      <p class="hero-top-txt">Biz Azərbaycanda rus oynaq şərablarını və Azərbaycandakı «Şəki Şərab» zavodunda buraxılan şərabları təqdim edirik.</p>
     </div>
     <div class="hero-bottom d-flex flex-column align-center">
       <h2 class="hero-bottom-heading">ŞƏKİ ŞƏRABI</h2>
-      <p class="hero-bottom-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum hasLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum hasLorem
-        Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <p class="hero-bottom-txt">Şəki bölgəsinin zəngin şərab istehsalı ənənələrini əks etdirir. Müxtəlif iqlim və məhsuldar üzüm bağlarından gələn şərablarımız, qədim metodlarla müasir innovasiyanı birləşdirərək hər butulkada unikal bir təcrübə təqdim edir. İstər peşəkar, istər yeni başlayan olsanız, Şəki Şərabları hər kəs üçün özəl bir seçimdir. Hər siparişdə Şəkinin mahiyyətini kəşf edin.</p>
     </div>
-    <a href="#footer">
+    <a href="#aboutSection">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="61" viewBox="0 0 26 61" fill="none">
         <path d="M15.6889 48.825H10.1519C5.18194 48.825 1.11694 44.76 1.11694 39.791V20.704C1.11694 15.735 5.18294 11.67 10.1519 11.67H15.6879C20.6579 11.67 24.7229 15.735 24.7229 20.704V39.791C24.7229 44.76 20.6569 48.825 15.6879 48.825H15.6889Z" stroke="#E4E4E4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M18.1901 54.34L12.9741 59.556M7.71606 54.34L12.9321 59.556M7.71606 6.216L12.9321 1M18.1901 6.216L12.9741 1M13.0041 26.479H12.8361C12.2981 26.4777 11.7825 26.2634 11.4021 25.883C11.0217 25.5026 10.8074 24.987 10.8061 24.449V18.404C10.8061 17.288 11.7201 16.375 12.8361 16.375H13.0041C14.1201 16.375 15.0341 17.288 15.0341 18.405V24.451C15.0341 25.567 14.1201 26.481 13.0041 26.481V26.479Z" stroke="#E4E4E4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -133,24 +132,14 @@
   <!-- hero end -->
 
   <!-- about and products start -->
-  <div class="aboutAndProduct-container">
+  <div id="aboutSection" class="aboutAndProduct-container">
     <div class="container d-flex flex-column align-center">
       <!-- about -->
       <div class="about-section d-flex align-center">
         <div class="about-left d-flex flex-column align-center">
           <h2 class="about-heading">Haqqımızda</h2>
-          <h3 class="about-subheading">Lorem Ipsum is simply </h3>
-          <p class="about-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem
-            Ipsum hasLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            hasLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
-            simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum hasLorem Ipsum is simply dummy
-            text
-            of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum hasLorem Ipsum is simply dummy text of the printing and
-            typesetting industry. </p>
-          <a href="#" class="btn-empty">Ətraflı</a>
+          <p class="about-txt">«Abrau-Durso», 150 ildən artıq öncə Rusiyanın güneyində, Abrau zümrüd gölünün sahilində təsis edilmişdir. Burada bu gün bütün dünyada tanınan yüksək keyfiyyətli oynaq şərablar yaradılır.</p>
+          <a href="./pages/About/about.html" target="_blank" class="btn-empty">Ətraflı</a>
         </div>
 
         <div class="about-right">
@@ -163,77 +152,60 @@
         <h2 class="products-heading">Məhsullar</h2>
 
         <!-- swiper owl carousel -->
-        <div class="carousel-wine owl-carousel owl-theme container">
+        <div id="owlCarousel" class="carousel-wine owl-carousel owl-theme container">
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="#" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper1.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper1.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
-                “Ağdam Ağ Şərab”</h4>
+                “Ağdam Ağ Şərab” fdgth</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 8%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
+
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper2.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper2.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
                 “Ağdam Ağ Şərab”</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 10%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper3.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper3.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
                 “Ağdam Ağ Şərab”</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 19%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper4.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper4.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
                 “Ağdam Ağ Şərab”</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 7%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper5.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper5.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
                 “Ağdam Ağ Şərab”</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 8%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
           <div class="carousel-wine-item d-flex flex-column align-center">
-            <a href="" class="carousel-wine-item-link">
-              <img src="../../assets/images/swiper2.png" alt="az abrau wine">
-            </a>
+            <img src="../../assets/images/swiper2.png" alt="az abrau wine">
             <div class="carousel-wine-item-details  flex-column align-center">
               <h4>Gücləndirilmiş şərab
                 “Ağdam Ağ Şərab”</h4>
               <p>Çeşid: 100% Qırmızı spirtli içkilər</p>
               <p>Spirt: 10%</p>
-              <a href="#" class="btn-empty-carousel">Ətraflı</a>
             </div>
           </div>
         </div>
@@ -254,9 +226,8 @@
         <div class="wine-video-txt">
           <h2>ŞƏRABÇILIQ
             BİZİM İŞİMİZDİR!</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has. Lorem Ipsum is simply dummy.</p>
-          <a class="btn-empty" href="#">Ətraflı</a>
+          <p>Şəki bölgəsinin üzüm bağları, özünəməxsus iqlim və zəngin torpağı ilə şərabçılıq ənənələrini yaşadır. Şərablarımız keyfiyyətli və dadlıdır. Hər butulka hekayə ilə doludur.</p>
+          <a class="btn-empty" href="./pages/About/about.html">Ətraflı</a>
         </div>
       </div>
     </div>
@@ -274,13 +245,13 @@
         </div>
         <div class="brands-txt-left">
           <h2 class="brands-txt-heading">AZƏRBAYCAN ŞƏRABI</h2>
-          <a class="btn-empty brands-btn" href="#">Ətraflı</a>
+          <a class="btn-empty brands-btn" href="./pages/Products/index.html">Ətraflı</a>
         </div>
 
         <div id="grape-garden"><img src="../../assets/images/garden 1 1.png" alt="grape garden"></div>
         <div class="brands-txt-right">
           <h2 class="brands-txt-heading">RUSİYA ŞƏRABI</h2>
-          <a class="btn-empty brands-btn" href="#">Ətraflı</a>
+          <a class="btn-empty brands-btn" href="./pages/Products/index.html">Ətraflı</a>
         </div>
       </div>
     </div>
@@ -298,7 +269,6 @@
         <div class="swiper mySwiper news-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
               <div class="swiper-img-container">
                 <img src="../../assets/images/news4.jpg" alt="az abrau wine">
               </div>
@@ -309,7 +279,6 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
               <div class="swiper-img-container">
                 <img src="../../assets/images/news2.jfif" alt="az abrau wine">
               </div>
@@ -320,7 +289,6 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
               <div class="swiper-img-container">
                 <img src="../../assets/images/news3.jfif" alt="az abrau wine">
               </div>
@@ -331,7 +299,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
+
               <div class="swiper-img-container">
                 <img src="../../assets/images/news2.jfif" alt="az abrau wine">
               </div>
@@ -342,7 +310,6 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
               <div class="swiper-img-container">
                 <img src="../../assets/images/news4.jpg" alt="az abrau wine">
               </div>
@@ -353,7 +320,6 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide-link"></a>
               <div class="swiper-img-container">
                 <img src="../../assets/images/news3.jfif" alt="az abrau wine">
               </div>
@@ -373,7 +339,11 @@
   </section>
 
   <!-- news end -->
-
+  <!-- SCROLL TO TOP start-->
+  <button id="scrollToTop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg></button>
+  <!-- SCROLL TO TOP end-->
   <!-- footer start -->
   <footer id="footer">
     <div class="footer-top-container">
@@ -434,7 +404,7 @@
         </div>
         <div><a href="./index.html"><img src="../../assets/images/logo-black.png" alt="logo"></a></div>
         <div>
-          <p><b>Məxfilik Siyasəti | Şərtlər və qaydalar</b></p>
+          <p><b>&copy; Məxfilik Siyasəti</b></p>
         </div>
       </div>
     </div>

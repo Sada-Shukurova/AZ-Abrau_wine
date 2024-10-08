@@ -28,6 +28,7 @@ $(document).ready(function () {
     dots: false,
   });
 });
+//
 
 // filter brightness on image on mouseenter
 
@@ -69,4 +70,15 @@ let newsSwiper = new Swiper(".news-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+// scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.getElementById("scrollToTop");
+
+  scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });

@@ -1,4 +1,3 @@
-
 // fancybox video
 Fancybox.bind("[data-fancybox]", {
   //custom options
@@ -18,33 +17,44 @@ let swiper = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 10,
   breakpoints: {
-    0:{
+    0: {
       slidesPerView: 1,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     640: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
-    900:{
+    900: {
       slidesPerView: 4,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
-    1180:{
+    1180: {
       slidesPerView: 6,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
+  },
+});
+// scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.getElementById("scrollToTop");
 
-}});
+  scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
