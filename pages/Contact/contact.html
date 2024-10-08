@@ -2,183 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <!-- sweet alert -->
-    <link rel="stylesheet" href="sweetalert2.min.css">
-    <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- my css -->
-    <link rel="stylesheet" href="../../assets/css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <!-- sweet alert -->
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- my css -->
+  <link rel="stylesheet" href="../../assets/css/contact.css">
 </head>
 
 <body>
-    <header>
-        <div class="container d-flex align-center justify-between header-container">
-            <div class="logo-container">
-                <a href="../Home/index.html"></a>
-                <img src="../../assets/images/logo-white.png" alt="AZ Abrau logo">
-            </div>
-            <!-- burger icon -->
-            <svg class="header-burger-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                <path
-                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-            </svg>
-            <!-- nav -->
-            <nav class="d-flex align-center">
-                <a class="navLink" href="../About/about.html">HAQQIMIZDA</a>
-                <a class="navLink" href="../Products/index.html">MƏHSULLAR</a>
-                <a class="navLink" href="../SellPoints/sellPoints.html">SATIŞ MƏNTƏQƏLƏRİ</a>
-                <a class="navLink" href="../News/news.html">XƏBƏRLƏR</a>
-                <a class="navLink  activeNav" href="../Contact/contact.html">ƏLAQƏ</a>
-            </nav>
-            <!-- search -->
-            <div class="search-box d-flex flex-center">
-                <input class="search-input" type="search" placeholder="Search">
-                <div class="search-btn d-flex flex-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </div>
-            </div>
-            <!-- social -->
-            <div class="social-container d-flex align-center">
-                <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
-                        <path
-                            d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z"
-                            fill="#E4E4E4" />
-                    </svg>
-                </a>
-
-                <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                        <path
-                            d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z"
-                            fill="#E4E4E4" />
-                    </svg>
-                </a>
-                <a class="d-flex flex-center" target="_blank" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                        <path
-                            d="M1 9.28C1 13.853 4.70696 17.56 9.28 17.56C13.853 17.56 17.56 13.853 17.56 9.28C17.56 4.70696 13.853 1 9.28 1C4.70696 1 1 4.70696 1 9.28Z"
-                            stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M1.52173 12.178H17.0384M1.52173 6.38201H17.0384M10.1081 1.04141C10.1081 1.04141 14.7997 4.31201 14.7997 9.28001C14.7997 14.248 10.1081 17.5186 10.1081 17.5186L10.6597 9.28001L10.1081 1.04141ZM8.45209 17.5186C8.45209 17.5186 4.67974 14.248 4.67974 9.28001C4.67974 4.31201 8.45209 1.04141 8.45209 1.04141L7.89974 9.28001L8.45209 17.5186Z"
-                            stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
+  <header>
+    <div class="container d-flex align-center justify-between header-container">
+      <div class="logo-container">
+        <a href="./index.html"></a>
+        <img src="../../assets/images/logo-white.png" alt="AZ Abrau logo">
+      </div>
+      <!-- burger icon -->
+      <svg class="header-burger-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+      </svg>
+      <!-- nav -->
+      <nav class="d-flex align-center">
+        <a class="navLink" href="./pages/About/about.html">HAQQIMIZDA</a>
+        <a class="navLink" href=".pages/Products/index.html">MƏHSULLAR</a>
+        <a class="navLink" href=".pages/SellPoints/sellPoints.html">SATIŞ MƏNTƏQƏLƏRİ</a>
+        <a class="navLink" href=".pages/News/news.html">XƏBƏRLƏR</a>
+        <a class="navLink" href=".pages/Contact/contact.html">ƏLAQƏ</a>
+      </nav>
+      <!-- search -->
+      <div class="search-box d-flex flex-center">
+        <input class="search-input" type="search" placeholder="Search">
+        <div class="search-btn d-flex flex-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+          </svg>
         </div>
-    </header>
-    <!-- header end -->
+      </div>
+      <!-- social -->
+      <div class="social-container d-flex align-center">
+        <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+            <path d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z" fill="#E4E4E4" />
+          </svg>
+        </a>
 
-    <div class="mobile-header">
-        <!-- close icon -->
-        <svg class="mobile-close-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-            <path
-                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z" fill="#E4E4E4" />
+          </svg>
+        </a>
+        <a class="d-flex flex-center" target="_blank" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+            <path d="M1 9.28C1 13.853 4.70696 17.56 9.28 17.56C13.853 17.56 17.56 13.853 17.56 9.28C17.56 4.70696 13.853 1 9.28 1C4.70696 1 1 4.70696 1 9.28Z" stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.52173 12.178H17.0384M1.52173 6.38201H17.0384M10.1081 1.04141C10.1081 1.04141 14.7997 4.31201 14.7997 9.28001C14.7997 14.248 10.1081 17.5186 10.1081 17.5186L10.6597 9.28001L10.1081 1.04141ZM8.45209 17.5186C8.45209 17.5186 4.67974 14.248 4.67974 9.28001C4.67974 4.31201 8.45209 1.04141 8.45209 1.04141L7.89974 9.28001L8.45209 17.5186Z" stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <div class="mobile-header">
+    <!-- close icon -->
+    <svg class="mobile-close-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+      <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+
+    <div class="logo-container">
+      <a href="./index.html"></a>
+      <img src="../../assets/images/logo-white.png" alt="AZ Abrau logo">
+    </div>
+
+    <!-- nav -->
+    <nav id="mobile-nav" class="d-flex flex-column">
+      <a class="navLink" href=".pages/About/about.html">HAQQIMIZDA</a>
+      <a class="navLink" href=".pages/Products/index.html">MƏHSULLAR</a>
+      <a class="navLink" href=".pages/SellPoints/sellPoints.html">SATIŞ MƏNTƏQƏLƏRİ</a>
+      <a class="navLink" href=".pages/News/news.html">XƏBƏRLƏR</a>
+      <a class="navLink" href=".pages/Contact/contact.html">ƏLAQƏ</a>
+    </nav>
+    <!-- social -->
+    <div id="mobile-social" class="social-container d-flex align-center">
+      <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
+        <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+          <path d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z" fill="#E4E4E4" />
+        </svg>
+      </a>
+
+      <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
+        <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z" fill="#E4E4E4" />
         </svg>
 
-        <div class="logo-container">
-            <a href="../Home/index.html"></a>
-            <img src="../../assets/images/logo-white.png" alt="AZ Abrau logo">
-        </div>
-
-        <!-- nav -->
-        <nav id="mobile-nav" class="d-flex flex-column">
-            <a class="navLink" href="../About/about.html">HAQQIMIZDA</a>
-            <a class="navLink" href="../Products/index.html">MƏHSULLAR</a>
-            <a class="navLink" href="../SellPoints/sellPoints.html">SATIŞ MƏNTƏQƏLƏRİ</a>
-            <a class="navLink" href="../News/news.html">XƏBƏRLƏR</a>
-            <a class="navLink  activeNav" href="../Contact/contact.html">ƏLAQƏ</a>
-        </nav>
-        <!-- social -->
-        <div id="mobile-social" class="social-container d-flex align-center">
-            <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
-                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16"
-                    fill="none">
-                    <path
-                        d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z"
-                        fill="#E4E4E4" />
-                </svg>
-            </a>
-
-            <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
-                <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                    fill="none">
-                    <path
-                        d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z"
-                        fill="#E4E4E4" />
-                </svg>
-
-            </a>
-            <a class="d-flex flex-center" target="_blank" href="">
-                <svg class="lang" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
-                    fill="none">
-                    <path
-                        d="M1 9.28C1 13.853 4.70696 17.56 9.28 17.56C13.853 17.56 17.56 13.853 17.56 9.28C17.56 4.70696 13.853 1 9.28 1C4.70696 1 1 4.70696 1 9.28Z"
-                        stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M1.52173 12.178H17.0384M1.52173 6.38201H17.0384M10.1081 1.04141C10.1081 1.04141 14.7997 4.31201 14.7997 9.28001C14.7997 14.248 10.1081 17.5186 10.1081 17.5186L10.6597 9.28001L10.1081 1.04141ZM8.45209 17.5186C8.45209 17.5186 4.67974 14.248 4.67974 9.28001C4.67974 4.31201 8.45209 1.04141 8.45209 1.04141L7.89974 9.28001L8.45209 17.5186Z"
-                        stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </a>
-        </div>
+      </a>
+      <a class="d-flex flex-center" target="_blank" href="">
+        <svg class="lang" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+          <path d="M1 9.28C1 13.853 4.70696 17.56 9.28 17.56C13.853 17.56 17.56 13.853 17.56 9.28C17.56 4.70696 13.853 1 9.28 1C4.70696 1 1 4.70696 1 9.28Z" stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M1.52173 12.178H17.0384M1.52173 6.38201H17.0384M10.1081 1.04141C10.1081 1.04141 14.7997 4.31201 14.7997 9.28001C14.7997 14.248 10.1081 17.5186 10.1081 17.5186L10.6597 9.28001L10.1081 1.04141ZM8.45209 17.5186C8.45209 17.5186 4.67974 14.248 4.67974 9.28001C4.67974 4.31201 8.45209 1.04141 8.45209 1.04141L7.89974 9.28001L8.45209 17.5186Z" stroke="#E4E4E4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
     </div>
-    <!-- TABLET AND MOBILE MENU END -->
+  </div>
+  <!-- TABLET AND MOBILE MENU END -->
 
-    <!-- hero start -->
-    <div class="hero">
-        <h1>ƏLAQƏ</h1>
-    </div>
-    <!-- hero end -->
+  <!-- hero start -->
+  <div class="hero">
+    <h1>ƏLAQƏ</h1>
+  </div>
+  <!-- hero end -->
 
-    <!-- main start -->
-    <main>
-        <div class="container">
-            <section class="contact-top d-flex">
-                <div class="contact-info d-flex flex-column  contact-address">
-                    <h2 class="contact-info-heading">Ünvan</h2>
-                    <a href="https://www.google.com/maps/place/Sport+Plaza+Hotel+%26+Apartments/@40.4210501,49.9165795,13.42z/data=!4m9!3m8!1s0x403062915c500001:0x92a303d7fd062f48!5m2!4m1!1i2!8m2!3d40.4186085!4d49.9096959!16s%2Fg%2F11pv96zl33?entry=ttu"
-                        class="contact-info-txt">Heyder Aliyev pr 115, Baki Azərbaycan</a>
-                </div>
-                <div class="contact-info d-flex flex-column contact-phone">
-                    <h2 class="contact-info-heading">Telefon</h2>
-                    <a href="tel:+944 50 123 45 67" class="contact-info-txt">+944 50 123 45 67</a>
-                    <a href="tel:+944 50 123 45 67" class="contact-info-txt">+944 50 123 45 67</a>
-                </div>
-                <div class="contact-info d-flex flex-column contact-mail">
-                    <h2 class="contact-info-heading">E-mail</h2>
-                    <a href="mailto:info@azabrau.az" class="contact-info-txt">info@azabrau.az</a>
-                </div>
-            </section>
-            <!-- form -->
-            <section class="contact-bottom d-flex">
-                <form class="userForm d-flex flex-column align-center" action="" method="get">
-                    <div class="smallInputsContainer d-flex justify-between">
-                        <input required class="smallInputs" placeholder="Adınız" type="text" name="username"
-                            id="username">
-                        <input required class="smallInputs" placeholder="Soyadınız" type="text" name="userSurname"
-                            id="userSurname">
-                        <input required class="smallInputs" placeholder="E-mail adresi" type="email" name="userMail"
-                            id="userMail">
-                        <input required class="smallInputs" placeholder="Telefon nömrəsi" type="text" name="userTel"
-                            id="userTel">
-                    </div>
-                    <textarea required placeholder="Əlavə qeyd" name="userComment" id="userComment" cols="30"
-                        rows="10"></textarea>
-                    <button class="formSubmit" type="submit">Göndər</button>
-                </form>
-            </section>
+  <!-- main start -->
+  <main>
+    <div class="container">
+      <section class="contact-top d-flex">
+        <div class="contact-info d-flex flex-column  contact-address">
+          <h2 class="contact-info-heading">Ünvan</h2>
+          <a href="https://www.google.com/maps/place/Sport+Plaza+Hotel+%26+Apartments/@40.4210501,49.9165795,13.42z/data=!4m9!3m8!1s0x403062915c500001:0x92a303d7fd062f48!5m2!4m1!1i2!8m2!3d40.4186085!4d49.9096959!16s%2Fg%2F11pv96zl33?entry=ttu" class="contact-info-txt">Heyder Aliyev pr 115, Baki Azərbaycan</a>
         </div>
-    </main>
-    <!-- main end -->
+        <div class="contact-info d-flex flex-column contact-phone">
+          <h2 class="contact-info-heading">Telefon</h2>
+          <a href="tel:+944 50 123 45 67" class="contact-info-txt">+944 50 123 45 67</a>
+          <a href="tel:+944 50 123 45 67" class="contact-info-txt">+944 50 123 45 67</a>
+        </div>
+        <div class="contact-info d-flex flex-column contact-mail">
+          <h2 class="contact-info-heading">E-mail</h2>
+          <a href="mailto:info@azabrau.az" class="contact-info-txt">info@azabrau.az</a>
+        </div>
+      </section>
+      <!-- form -->
+      <section class="contact-bottom d-flex">
+        <form class="userForm d-flex flex-column align-center" action="" method="get">
+          <div class="smallInputsContainer d-flex justify-between">
+            <input required class="smallInputs" placeholder="Adınız" type="text" name="username" id="username">
+            <input required class="smallInputs" placeholder="Soyadınız" type="text" name="userSurname" id="userSurname">
+            <input required class="smallInputs" placeholder="E-mail adresi" type="email" name="userMail" id="userMail">
+            <input required class="smallInputs" placeholder="Telefon nömrəsi" type="text" name="userTel" id="userTel">
+          </div>
+          <textarea required placeholder="Əlavə qeyd" name="userComment" id="userComment" cols="30" rows="10"></textarea>
+          <button class="formSubmit" type="submit">Göndər</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <!-- main end -->
 
-    <!-- modal start -->
-    <!-- <div id="modal" class="modal">
+  <!-- modal start -->
+  <!-- <div id="modal" class="modal">
         <div class="close-modal">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 448 512">
                 <path
@@ -189,89 +161,81 @@
             <h2 class="modal-message">Rəy bildirdiyiniz üçün təşəkkür edirik!🍷</h2>
         </div>
     </div> -->
-    <!-- modal end -->
+  <!-- modal end -->
 
 
-    <!-- footer start -->
-    <footer id="footer">
-        <div class="footer-top-container">
-            <div class="container footer-top d-flex justify-between">
-                <div class="d-flex flex-column footer-column-gaps">
-                    <a class="footer-bold-txt" href="../About/about.html">Haqqımızda</a>
-                    <a class="footer-bold-txt" href="../Products/index.html">Şəki Şərabları</a>
-                    <a class="footer-bold-txt" href="../Products/index.html">Abrau-Dürso</a>
-                </div>
-                <div class="d-flex flex-column footer-column-gaps">
-                    <a class="footer-bold-txt" href="../SellPoints/sellPoints.html">Satış məntəqələri</a>
-                    <a class="footer-bold-txt" href="../News/news.html">Xəbərlər</a>
-                    <a class="footer-bold-txt" href="../Contact/contact.html">Əlaqə</a>
-                </div>
-                <div class="d-flex flex-column footer-column-gaps address-column">
-                    <div class="d-flex">
-                        <p class="footer-bold-txt">Telefon</p>
-                        <a href="tel:+994 50 123 45 67">+994 50 123 45 67</a>
-                    </div>
-                    <div class="d-flex align-center">
-                        <p class="footer-bold-txt">E-mail</p>
-                        <a href="mailto:info@azabrau.az">info@azabrau.az</a>
-                    </div>
-                    <div class="d-flex align-center">
-                        <p class="footer-bold-txt">Ünvan</p>
-                        <a class="address-length" target="_blank"
-                            href="https://www.google.com/maps/search/Port+Baku,Neftchilar+Avenue+153,+Baku+Azerbaijan/@40.3756305,49.858829,17z/data=!3m1!4b1?entry=ttu">Port
-                            Baku,Neftchilar Avenue 153, Baku Azerbaijan</a>
-                    </div>
-                </div>
-                <div class="d-flex flex-column footer-column-gaps footer-social">
-                    <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <path
-                                d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z"
-                                fill="#E4E4E4" />
-                        </svg>
-                    </a>
-                    <a target="_blank" href="https://web.whatsapp.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M11.6659 9.58801C11.4662 9.48868 10.4876 9.01001 10.3054 8.94335C10.1231 8.87735 9.99051 8.84468 9.85721 9.04335C9.72457 9.24068 9.34342 9.68734 9.22753 9.81934C9.11097 9.95201 8.99508 9.96801 8.79613 9.86934C8.59717 9.76934 7.95543 9.56068 7.19513 8.88601C6.60363 8.36068 6.20371 7.71201 6.08782 7.51335C5.97193 7.31535 6.0751 7.20801 6.17491 7.10935C6.26467 7.02068 6.37386 6.87802 6.47367 6.76268C6.57348 6.64668 6.60631 6.56402 6.67262 6.43135C6.73961 6.29935 6.70612 6.18402 6.65588 6.08468C6.60631 5.98535 6.2084 5.01002 6.04227 4.61335C5.88083 4.22735 5.71671 4.28002 5.5948 4.27335C5.47824 4.26802 5.3456 4.26669 5.21297 4.26669C5.08033 4.26669 4.86463 4.31602 4.68243 4.51469C4.49955 4.71269 3.98576 5.19202 3.98576 6.16735C3.98576 7.14202 4.6985 8.08401 4.79831 8.21668C4.89813 8.34868 6.2017 10.35 8.1986 11.208C8.67421 11.412 9.04465 11.534 9.33337 11.6247C9.81032 11.776 10.2444 11.7547 10.5874 11.7033C10.9692 11.6467 11.765 11.224 11.9311 10.7613C12.0966 10.2987 12.0966 9.90201 12.047 9.81934C11.9975 9.73668 11.8648 9.68734 11.6652 9.58801H11.6659ZM8.03381 14.5233H8.03113C6.84507 14.5236 5.68079 14.2062 4.66032 13.6047L4.41916 13.462L1.91249 14.1167L2.5817 11.6847L2.42428 11.4353C1.76119 10.3849 1.41028 9.1692 1.4121 7.92868C1.41344 4.29535 4.38366 1.33936 8.03649 1.33936C9.80496 1.33936 11.4676 2.02602 12.7176 3.27136C13.3341 3.88241 13.8228 4.60906 14.1553 5.40928C14.4878 6.2095 14.6576 7.0674 14.6549 7.93335C14.6535 11.5667 11.6833 14.5233 8.03381 14.5233ZM13.6688 2.32536C12.9307 1.58597 12.0525 0.999717 11.0851 0.60056C10.1178 0.201403 9.08038 -0.00271749 8.03314 2.73183e-05C3.64278 2.73183e-05 0.0683272 3.55669 0.0669875 7.92801C0.0649531 9.31918 0.43165 10.6863 1.13008 11.8913L0 16L4.22289 14.8973C5.39107 15.5307 6.70015 15.8626 8.03046 15.8627H8.03381C12.4242 15.8627 15.9986 12.306 16 7.93401C16.0032 6.8922 15.7988 5.86008 15.3987 4.89737C14.9986 3.93466 14.4106 3.06047 13.6688 2.32536Z"
-                                fill="#292929" />
-                        </svg>
-                    </a>
-                    <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
-                            <path
-                                d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z"
-                                fill="#E4E4E4" />
-                        </svg>
-                    </a>
-
-
-                    <a class="d-flex flex-center" target="_blank" href="">
-
-                    </a>
-                </div>
-            </div>
+  <!-- footer start -->
+  <footer id="footer">
+    <div class="footer-top-container">
+      <div class="container footer-top d-flex justify-between">
+        <div class="d-flex flex-column footer-column-gaps">
+          <a class="footer-bold-txt" href=".pages/About/about.html">Haqqımızda</a>
+          <a class="footer-bold-txt" href=".pages/Products/index.html">Şəki Şərabları</a>
+          <a class="footer-bold-txt" href=".pages/Products/index.html">Abrau-Dürso</a>
         </div>
-        <div class="footer-bottom-container">
-            <div class="container footer-bottom d-flex align-center justify-between">
-                <div>
-                    <p><b>2022 Az Abrau</b></p>
-                </div>
-                <div><a href="../Home/index.html"><img src="../../assets/images/logo-black.png" alt="logo"></a>
-                </div>
-                <div>
-                    <p><b>Məxfilik Siyasəti | Şərtlər və qaydalar</b></p>
-                </div>
-            </div>
+        <div class="d-flex flex-column footer-column-gaps">
+          <a class="footer-bold-txt" href=".pages/SellPoints/sellPoints.html">Satış məntəqələri</a>
+          <a class="footer-bold-txt" href=".pages/News/news.html">Xəbərlər</a>
+          <a class="footer-bold-txt" href=".pages/Contact/contact.html">Əlaqə</a>
         </div>
-    </footer>
-    <!-- footer end -->
-    <!-- sticky nav and mobile nav -->
-    <script src="../../assets/stickyAndMobileNav.js/app.js"></script>
-    <!-- sweet alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- my js -->
-    <script src="./contact.js"></script>
+        <div class="d-flex flex-column footer-column-gaps address-column">
+          <div class="d-flex">
+            <p class="footer-bold-txt">Telefon</p>
+            <a href="tel:+994 50 123 45 67">+994 50 123 45 67</a>
+          </div>
+          <div class="d-flex align-center">
+            <p class="footer-bold-txt">E-mail</p>
+            <a href="mailto:info@azabrau.az">info@azabrau.az</a>
+          </div>
+          <div class="d-flex align-center">
+            <p class="footer-bold-txt">Ünvan</p>
+            <a class="address-length" target="_blank" href="https://www.google.com/maps/search/Port+Baku,Neftchilar+Avenue+153,+Baku+Azerbaijan/@40.3756305,49.858829,17z/data=!3m1!4b1?entry=ttu">Port
+              Baku,Neftchilar Avenue 153, Baku Azerbaijan</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column footer-column-gaps footer-social">
+          <a class="d-flex flex-center" target="_blank" href="https://www.instagram.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path d="M7.49798 3.65177C5.36846 3.65177 3.64983 5.37044 3.64983 7.5C3.64983 9.62956 5.36846 11.3482 7.49798 11.3482C9.62751 11.3482 11.3461 9.62956 11.3461 7.5C11.3461 5.37044 9.62751 3.65177 7.49798 3.65177ZM7.49798 10.0011C6.12083 10.0011 4.99697 8.87718 4.99697 7.5C4.99697 6.12282 6.12083 4.99894 7.49798 4.99894C8.87514 4.99894 9.999 6.12282 9.999 7.5C9.999 8.87718 8.87514 10.0011 7.49798 10.0011ZM11.5037 2.59731C11.0065 2.59731 10.605 2.99883 10.605 3.49604C10.605 3.99326 11.0065 4.39478 11.5037 4.39478C12.0009 4.39478 12.4025 3.99513 12.4025 3.49604C12.4026 3.37798 12.3795 3.26105 12.3343 3.15194C12.2892 3.04283 12.223 2.9437 12.1396 2.86021C12.0561 2.77673 11.9569 2.71054 11.8478 2.66542C11.7387 2.62031 11.6218 2.59716 11.5037 2.59731ZM14.9992 7.5C14.9992 6.4643 15.0085 5.43798 14.9504 4.40416C14.8922 3.20335 14.6183 2.13763 13.7402 1.25953C12.8603 0.379564 11.7964 0.107505 10.5956 0.049341C9.55996 -0.00882328 8.53366 0.000558085 7.49986 0.000558085C6.46418 0.000558085 5.43788 -0.00882328 4.40408 0.049341C3.20329 0.107505 2.13759 0.38144 1.25951 1.25953C0.379557 2.1395 0.107503 3.20335 0.0493401 4.40416C-0.00882312 5.43986 0.000558074 6.46618 0.000558074 7.5C0.000558074 8.53382 -0.00882312 9.56202 0.0493401 10.5958C0.107503 11.7967 0.381433 12.8624 1.25951 13.7405C2.13946 14.6204 3.20329 14.8925 4.40408 14.9507C5.43976 15.0088 6.46606 14.9994 7.49986 14.9994C8.53554 14.9994 9.56184 15.0088 10.5956 14.9507C11.7964 14.8925 12.8621 14.6186 13.7402 13.7405C14.6202 12.8605 14.8922 11.7967 14.9504 10.5958C15.0104 9.56202 14.9992 8.5357 14.9992 7.5ZM13.3481 11.9242C13.2111 12.2657 13.046 12.5209 12.7815 12.7836C12.5169 13.0481 12.2636 13.2132 11.9221 13.3502C10.9352 13.7423 8.59183 13.6542 7.49798 13.6542C6.40414 13.6542 4.05885 13.7423 3.07195 13.3521C2.73048 13.2151 2.47531 13.05 2.21264 12.7854C1.94809 12.5209 1.78298 12.2676 1.64601 11.9261C1.25576 10.9373 1.34394 8.59386 1.34394 7.5C1.34394 6.40614 1.25576 4.0608 1.64601 3.07388C1.78298 2.7324 1.94809 2.47723 2.21264 2.21455C2.47719 1.95188 2.73048 1.78489 3.07195 1.64792C4.05885 1.25766 6.40414 1.34584 7.49798 1.34584C8.59183 1.34584 10.9371 1.25766 11.924 1.64792C12.2655 1.78489 12.5207 1.95 12.7833 2.21455C13.0479 2.47911 13.213 2.7324 13.35 3.07388C13.7402 4.0608 13.652 6.40614 13.652 7.5C13.652 8.59386 13.7402 10.9373 13.3481 11.9242Z" fill="#E4E4E4" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://web.whatsapp.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6659 9.58801C11.4662 9.48868 10.4876 9.01001 10.3054 8.94335C10.1231 8.87735 9.99051 8.84468 9.85721 9.04335C9.72457 9.24068 9.34342 9.68734 9.22753 9.81934C9.11097 9.95201 8.99508 9.96801 8.79613 9.86934C8.59717 9.76934 7.95543 9.56068 7.19513 8.88601C6.60363 8.36068 6.20371 7.71201 6.08782 7.51335C5.97193 7.31535 6.0751 7.20801 6.17491 7.10935C6.26467 7.02068 6.37386 6.87802 6.47367 6.76268C6.57348 6.64668 6.60631 6.56402 6.67262 6.43135C6.73961 6.29935 6.70612 6.18402 6.65588 6.08468C6.60631 5.98535 6.2084 5.01002 6.04227 4.61335C5.88083 4.22735 5.71671 4.28002 5.5948 4.27335C5.47824 4.26802 5.3456 4.26669 5.21297 4.26669C5.08033 4.26669 4.86463 4.31602 4.68243 4.51469C4.49955 4.71269 3.98576 5.19202 3.98576 6.16735C3.98576 7.14202 4.6985 8.08401 4.79831 8.21668C4.89813 8.34868 6.2017 10.35 8.1986 11.208C8.67421 11.412 9.04465 11.534 9.33337 11.6247C9.81032 11.776 10.2444 11.7547 10.5874 11.7033C10.9692 11.6467 11.765 11.224 11.9311 10.7613C12.0966 10.2987 12.0966 9.90201 12.047 9.81934C11.9975 9.73668 11.8648 9.68734 11.6652 9.58801H11.6659ZM8.03381 14.5233H8.03113C6.84507 14.5236 5.68079 14.2062 4.66032 13.6047L4.41916 13.462L1.91249 14.1167L2.5817 11.6847L2.42428 11.4353C1.76119 10.3849 1.41028 9.1692 1.4121 7.92868C1.41344 4.29535 4.38366 1.33936 8.03649 1.33936C9.80496 1.33936 11.4676 2.02602 12.7176 3.27136C13.3341 3.88241 13.8228 4.60906 14.1553 5.40928C14.4878 6.2095 14.6576 7.0674 14.6549 7.93335C14.6535 11.5667 11.6833 14.5233 8.03381 14.5233ZM13.6688 2.32536C12.9307 1.58597 12.0525 0.999717 11.0851 0.60056C10.1178 0.201403 9.08038 -0.00271749 8.03314 2.73183e-05C3.64278 2.73183e-05 0.0683272 3.55669 0.0669875 7.92801C0.0649531 9.31918 0.43165 10.6863 1.13008 11.8913L0 16L4.22289 14.8973C5.39107 15.5307 6.70015 15.8626 8.03046 15.8627H8.03381C12.4242 15.8627 15.9986 12.306 16 7.93401C16.0032 6.8922 15.7988 5.86008 15.3987 4.89737C14.9986 3.93466 14.4106 3.06047 13.6688 2.32536Z" fill="#292929" />
+            </svg>
+          </a>
+          <a class="d-flex flex-center" target="_blank" href="https://www.facebook.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+              <path d="M5.33333 5.33333V3.73333C5.33333 3.04 5.49333 2.66667 6.61333 2.66667H8V0H5.86667C3.2 0 2.13333 1.76 2.13333 3.73333V5.33333H0V8H2.13333V16H5.33333V8H7.68L8 5.33333H5.33333Z" fill="#E4E4E4" />
+            </svg>
+          </a>
+
+
+          <a class="d-flex flex-center" target="_blank" href="">
+
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-container">
+      <div class="container footer-bottom d-flex align-center justify-between">
+        <div>
+          <p><b>2022 Az Abrau</b></p>
+        </div>
+        <div><a href="./index.html"><img src="../../assets/images/logo-black.png" alt="logo"></a></div>
+        <div>
+          <p><b>Məxfilik Siyasəti | Şərtlər və qaydalar</b></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- sticky nav and mobile nav -->
+  <script src="../../assets/stickyAndMobileNav.js/app.js"></script>
+  <!-- sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- my js -->
+  <script src="./contact.js"></script>
 </body>
 
 </html>
