@@ -11,7 +11,6 @@
 - **JavaScript**: For dynamic functionality and interactivity.
 - **jQuery**: Utilized for carousel implementation and DOM manipulation.
 - **SwiperJS**: Integrated to create smooth, touch-friendly sliders.
-- **SweetAlert**: For displaying user-friendly notification alerts.
 - **Lodash**: Used for utility functions.
 - **Fancybox**: For embedding video content in a sleek, customizable lightbox.
 - **JSON-Server**: Simulated database for handling data locally during development.
@@ -22,7 +21,6 @@
 - **Interactive Carousel**: jQuery-powered carousel for showcasing featured products and promotional content.
 - **Product Catalog**: Browse a curated selection of sparkling wines with detailed descriptions and tasting notes.
 - **Video Embedding**: Fancybox integration for seamless viewing of video content in a modal lightbox.
-- **Notifications**: SweetAlert provides visually appealing notifications for user actions and site interactions.
 - **Dynamic Data**: JSON-Server acts as a local database during development, simulating real API requests.
 
 ## Contact
