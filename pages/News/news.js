@@ -1,47 +1,36 @@
-
 // fetching data
-
-
 
 const url = "https://azabrau-backend.vercel.app/news";
 const newsTop = document.querySelector(".news-top");
 const newsBottom = document.querySelector(".news-bottom");
 
-document.addEventListener("DOMContentLoaded", getData)
-
+document.addEventListener("DOMContentLoaded", getData);
 
 // function for fetching data
 function getData() {
-    fetch(url)
-        .then(resp => resp.json())
-        .then(data => {
-            // console.log(data);
+  fetch(url)
+    .then((resp) => resp.json())
+    .then((data) => {
+      // console.log(data);
 
-            getTopNews(data[0]);
+      getTopNews(data[0]);
 
-            const slicedData = data.slice(1, data.length);
-            getAllNews(slicedData)
-        }).catch(err => { console.log(err); });
+      const slicedData = data.slice(1, data.length);
+      getAllNews(slicedData);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
-
 
 // functions for writing data
 
 function getTopNews(topData) {
+  // newsTop.innerHTML = "";
+  // const topData = data.slice(0, 1)
+  const { id, newsTitle, newsDescription, image, date } = topData;
 
-
-    // newsTop.innerHTML = "";
-    // const topData = data.slice(0, 1)
-    const { id,
-        newsTitle,
-        newsDescription,
-        image,
-        date
-    } = topData
-
-
-
-    newsTop.innerHTML += `
+  newsTop.innerHTML += `
                 <div class="news-top-left">
                     <img src="${image}" alt="wine bottle">
                 </div>
@@ -52,33 +41,24 @@ function getTopNews(topData) {
                     <a href="../SingleNews/singleNews.html?id=${id}" class="news-top-btn">Ətraflı</a>
                 </div>
                     `;
-
-
-};
+}
 
 function getAllNews(allNews) {
-    console.log(allNews)
+  console.log(allNews);
 
-    newsBottom.innerHTML = "";
-    // const slicedData = data.slice(1, data.length)
-    // console.log(slicedData)
-    allNews.forEach((news) => {
+  newsBottom.innerHTML = "";
+  // const slicedData = data.slice(1, data.length)
+  // console.log(slicedData)
+  allNews.forEach((news) => {
+    const { id, newsTitle, image, date } = news;
 
-        const {
-            id, newsTitle,
-            image,
-            date
-        } = news;
-
-
-
-        newsBottom.innerHTML += `
+    newsBottom.innerHTML += `
                 <div class="news-bottom-container">
                     <a href="../SingleNews/singleNews.html?id=${id}" class="newsLink-bottom"></a>
                     <img src="${image}" alt="wine bottles">
                     <h2 class="news-bottom-heading">${newsTitle}</h2>
                     <h3 class="news-bottom-date">${date}</h3>
                 </div>
-                `
-    })
+                `;
+  });
 }
